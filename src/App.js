@@ -1,10 +1,14 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import { Home } from './views/home/Home';
 
 function App() {
   return (
-    <main className="jc_pagina">
-
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route index exact path='/' element={<Home />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

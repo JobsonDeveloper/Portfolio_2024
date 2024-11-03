@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --jc-primary_color: #fff;
+    --jc-secondary_color: #000;
+    --jc-tertiary_color: #00B2FF;
+    --jc-quaternary_color: #424242;
+
+    --jc-title_font_size: 1.1rem;
+    --jc-text_font_size: .9rem;
+
+    --jc-padding-container: 20px 5px;
+}

@@ -1,0 +1,187 @@
+:root {
+    --jd_animation_duration: 9s;
+}
+
+.jd_header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    height: max-content;
+    border: 1px solid var(--jd_secondary_color);
+    border-radius: 6px;
+
+    & .jd_header_options {
+        height: max-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+
+        & .jd_header_options_item {
+            width: 85px;
+            display: flex;
+            align-items: center;
+
+            & .jd_header_options_icon {
+                width: 40px;
+                cursor: pointer;
+            }
+
+            & .jd_options_logo_link {
+                display: flex;
+                align-items: end;
+                
+                & .jd_header_logo_link_img {
+                    width: 50px;
+                    cursor: pointer;
+                }
+            }
+
+            & .jd_header_link {
+                &:hover {
+                    color: var(--jd_tertiary_color);
+                }
+            }
+        }
+
+        & .jd_options_logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .jd_options_link {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+.jd_options_drawer {
+    display: flex;
+    flex-direction: column;
+
+    & .jd_options_subtitle {
+        font-weight: 400;
+        width: 250px;
+        padding: 15px;
+        background-color: var(--jd_quaternary_color);
+        color: var(--jd_primary_color);
+    }
+
+    .jd_options_list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 25px;
+
+        & .jd_options_item {
+            padding: 10px 15px;
+            position: relative;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+                background-color: var(--jd_tertiary_color);
+            }
+        }
+    }
+
+    & .sh_options_footer {
+        height: 100%;
+        display: flex;
+        align-items: end;
+        position: relative;
+        overflow: hidden;
+
+        & .sh_options_footer_gaming {
+            width: max-content;
+            height: max-content;
+            align-items: end;
+            position: absolute;
+            display: flex;
+            gap: 20px;
+            bottom: 0;
+            left: -50%;
+            animation: gamingAnimation var(--jd_animation_duration) linear infinite;
+
+            & .sh_gaming_ghost_gif {
+                background-size: 30px;
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                animation: ghostAnimation var(--jd_animation_duration) linear infinite;
+                animation-delay: 1s;
+            }
+            
+            & .sh_gaming_pacMan_gif {
+                width: 35px;
+                animation: heroAnimation var(--jd_animation_duration) linear infinite;
+                animation-delay: .5s;
+            }
+
+            & .sh_gaming_mario_gif {
+                width: 50px;
+                animation: heroAnimation var(--jd_animation_duration) linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes heroAnimation {
+    from {
+        transform: scaleX(1);
+    }
+
+    49% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(-1);
+    }
+
+    51% {
+        transform: scaleX(-1);
+    }
+
+    to {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes ghostAnimation {
+    from {
+        background-image: url('../../assets/icons/ghostHunter.gif');
+        transform: scaleX(1);
+    }
+
+    49% {
+        background-image: url('../../assets/icons/ghostHunter.gif');
+        transform: scaleX(1);
+    }
+
+    50% {
+        background-image: url('../../assets/icons/ghost.gif');
+        transform: scaleX(-1);
+    }
+
+    to {
+        background-image: url('../../assets/icons/ghost.gif');
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes gamingAnimation {
+    from {
+        left: -150%;
+    }
+    50% {
+        left: 170%;
+    }
+    to {
+        left: -150%;
+    }
+}

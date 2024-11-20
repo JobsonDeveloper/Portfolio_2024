@@ -4,13 +4,26 @@ import { useState } from 'react';
 import { Button, Drawer } from '@mui/material';
 import OptionsIco from '@mui/icons-material/Sort';
 import { Link } from 'react-router-dom';
-import logoImg from '../../assets/home/icons/logo.ico';
+import logoImg from '../../assets/icons/logo.ico';
 import styled from 'styled-components';
+import optionsImg from '../../assets/icons/Options 1.png';
+import gifMario from '../../assets/icons/2d-mario-running.gif';
+import gifPacMan from '../../assets/icons/pacMan.gif';
 
 const JDLink = styled(Link)`
     text-decoration: none;
-    font-size: 1rem;
-    color: #000;
+    font-size: var(--jd_text_font_size);
+    color: var(--jd_secondary_color);
+    cursor: pointer;
+    transition: .5s;
+`;
+
+const JDSubtitulo = styled.h4`
+    width: 100%;
+    font-size: var(--jd_subtitle_font_size);
+    justify-content: start;
+    color: var(--jd_secondary_color);
+    position: relative;
 `;
 
 export const Header = () => {
@@ -23,36 +36,48 @@ export const Header = () => {
     return (
         <>
             <ul className="jd_header">
-                <li className="jd_header_options" onClick={changeOpenDrawer(true)}>
-                    <OptionsIco />
-                </li>
-
-                <li className="jd_header_logo">
-                    <img src={logoImg} alt="" />
-                </li>
-
-                <li className="jd_header_contactMe">
-                   <JDLink to='/contact_me'>Fale Comigo</JDLink>
-                   {/* <Link to='/contact'>dd</Link> */}
-                </li>
-
-            </ul>
-
-            <Drawer open={open} onClose={changeOpenDrawer(false)}>
-                <ul className="jc_options_list">
-                    <li className="jc_options_item">
-                        <Link to='/'>Sobre mim</Link>
+                <ul className="jd_header_options">
+                    <li className="jd_header_options_item jd_options_imagem" onClick={changeOpenDrawer(true)}>
+                        <img src={optionsImg} alt="Options" className='jd_header_options_icon' />
                     </li>
-                    <li className="jc_options_item">
-                        <Link to='/qualificacoes'>Qualificações</Link>
+
+                    <li className="jd_header_options_item jd_options_logo">
+                        <Link to='/' className='jd_options_logo_link'>
+                            <img src={logoImg} alt="Logo" className='jd_header_logo_link_img' />
+                        </Link>
                     </li>
-                    <li className="jc_options_item">
-                        <Link to='/conhecimento'>Conhecimentos</Link>
-                    </li>
-                    <li className="jc_options_item">
-                        <Link to='/projetos'>Projetos</Link>
+
+                    <li className="jd_header_options_item jd_options_link">
+                        <JDLink to='mailto:jobsondeveloper@gmail.com' className='jd_header_link'>Fale Comigo</JDLink>
                     </li>
                 </ul>
+            </ul>
+
+            <Drawer open={open} onClose={changeOpenDrawer(false)} className='jd_options_drawer'>
+                <JDSubtitulo className='jd_options_subtitle'>Conheça mais sobre mim</JDSubtitulo>
+
+                <ul className="jd_options_list">
+                    <li className="jd_options_item">
+                        <JDLink to='/' className='sh_options_links'>Sobre mim</JDLink>
+                    </li>
+                    <li className="jd_options_item">
+                        <JDLink to='/qualificacoes' className='sh_options_links'>Qualificações</JDLink>
+                    </li>
+                    <li className="jd_options_item">
+                        <JDLink to='/conhecimento' className='sh_options_links'>Conhecimentos</JDLink>
+                    </li>
+                    <li className="jd_options_item">
+                        <JDLink to='/projetos' className='sh_options_links'>Projetos</JDLink>
+                    </li>
+                </ul>
+
+                <div className="sh_options_footer">
+                    <div className="sh_options_footer_gaming">
+                        <div className='sh_gaming_ghost_gif'></div>
+                        <img src={gifPacMan} alt="Gif do Pac Man" className='sh_gaming_pacMan_gif' />
+                        <img src={gifMario} alt="Gif do Mário" className='sh_gaming_mario_gif' />
+                    </div>
+                </div>
             </Drawer>
         </>
     )

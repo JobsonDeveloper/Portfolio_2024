@@ -10,6 +10,9 @@ import optionsImg from '../../assets/icons/Options 1.png';
 import gifMario from '../../assets/icons/2d-mario-running.gif';
 import gifPacMan from '../../assets/icons/pacMan.gif';
 
+// Components
+import backgroundImageOne from "../../assets/images/imageOne.png";
+
 const JDLink = styled(Link)`
     text-decoration: none;
     font-size: var(--jd_text_font_size);
@@ -35,22 +38,34 @@ export const Header = () => {
 
     return (
         <>
-            <ul className="jd_header">
-                <ul className="jd_header_options">
-                    <li className="jd_header_options_item jd_options_imagem" onClick={changeOpenDrawer(true)}>
-                        <img src={optionsImg} alt="Options" className='jd_header_options_icon' />
-                    </li>
-
-                    <li className="jd_header_options_item jd_options_logo">
-                        <Link to='/' className='jd_options_logo_link'>
-                            <img src={logoImg} alt="Logo" className='jd_header_logo_link_img' />
-                        </Link>
-                    </li>
-
-                    <li className="jd_header_options_item jd_options_link">
-                        <JDLink to='mailto:jobsondeveloper@gmail.com' className='jd_header_link'>Fale Comigo</JDLink>
-                    </li>
+            <article className="jd_header_navigation">
+                <ul className="jd_header">
+                    <ul className="jd_header_options">
+                        <li className="jd_header_options_item jd_options_imagem" onClick={changeOpenDrawer(true)}>
+                            <img src={optionsImg} alt="Options" className='jd_header_options_icon' />
+                        </li>
+                        <li className="jd_header_options_item jd_options_logo">
+                            <Link to='/' className='jd_options_logo_link'>
+                                <img src={logoImg} alt="Logo" className='jd_header_logo_link_img' />
+                            </Link>
+                        </li>
+                        <li className="jd_header_options_item jd_options_link">
+                            <JDLink to='mailto:jobsondeveloper@gmail.com' className='jd_header_link'>Fale Comigo</JDLink>
+                        </li>
+                    </ul>
                 </ul>
+            </article>
+
+            <article className="jd_initial_image">
+                <img
+                    src={backgroundImageOne}
+                    alt="Imagem de apresentação, contendo Jobson dentro de um escritório com computadores e códigos"
+                    className="jd_initial_image_img"
+                />
+            </article>
+
+            <ul className="jd_breadcrumbs">
+                <li className="jd_breadcrumbs_item">Sobre Mim</li>
             </ul>
 
             <Drawer open={open} onClose={changeOpenDrawer(false)} className='jd_options_drawer'>

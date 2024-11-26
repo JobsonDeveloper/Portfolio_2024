@@ -8,8 +8,95 @@
     --jd_title_font_size: 1.2rem;
     --jd_subtitle_font_size: 1.1rem;
     --jd_text_font_size: 1rem;
+    --js_text_font_size_n2: .8rem;
+}
+
+@keyframes nameAnimation {
+    0% {
+        width: 0%;
+    }
+    10% {
+        width: 100%;
+    }
+    40% {
+        width: 100%;
+    }
+    50% {
+        width: 0%;
+        display: none;
+    }
+}
+
+@keyframes profissionAnimation {
+    0% {
+        display: none;
+    }
+    50% {
+        width: 0%;
+        display: none;
+    }
+    51% {
+        display: flex;
+    }
+    60% {
+        width: 100%;
+    }
+    90% {
+        width: 100%;
+    }
+    99% {
+        display: flex;
+    }
+    100% {
+        width: 0%;
+        display: none;
+    }
 }
 
 .jd_home {
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    min-height: 100vh;
+    position: relative;
+
+    & .jd_main {
+        background-color: green;
+
+        & .jd_presentation_name {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+
+            & .jd_presentation_name_item {
+                display: flex;
+                justify-content: start;
+                background-color: purple;
+
+                & :where(.jd_presentation_title_one,
+                    .jd_presentation_title_tow) {
+
+                    display: flex;
+                    font-size: var(--jd_title_font_size);
+                    color: var(--jd_tertiary_color);
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    background-color: gold;
+                    overflow: hidden;
+                    text-wrap: nowrap;
+                }
+                
+                & .jd_presentation_title_one {
+                    animation: nameAnimation 9s ease-in infinite;
+                }
+                
+                & .jd_presentation_title_tow {
+                    display: none;
+                    animation: profissionAnimation 9s ease-in infinite;
+                }
+            }
+        }
+    }
 }

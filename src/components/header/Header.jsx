@@ -84,6 +84,15 @@ export const Header = () => {
                     <li className="jd_options_item">
                         <JDLink to='/projetos' className='sh_options_links'>Projetos</JDLink>
                     </li>
+                    <li className="jd_options_item">
+                        <JDLink
+                            to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link'
+                            className='sh_options_links'
+                            target='_blank'
+                        >
+                            Currículo
+                        </JDLink>
+                    </li>
                 </ul>
 
                 <div className="sh_options_footer">

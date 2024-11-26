@@ -1,9 +1,10 @@
 :root {
     --jd_primary_color: #fff;
     --jd_secondary_color: #000;
-    --jd_tertiary_color: #4C81D4;
+    --jd_tertiary_color: #2095c0;
     --jd_quaternary_color: #0F2343;
     --jd_quinary_color: #22EF80;
+    --jd_text_color: #444444;
 
     --jd_title_font_size: 1.2rem;
     --jd_subtitle_font_size: 1.1rem;
@@ -15,12 +16,15 @@
     0% {
         width: 0%;
     }
+
     10% {
         width: 100%;
     }
+
     40% {
         width: 100%;
     }
+
     50% {
         width: 0%;
         display: none;
@@ -31,71 +35,226 @@
     0% {
         display: none;
     }
-    50% {
-        width: 0%;
+
+    49% {
         display: none;
     }
+
+    50% {
+        display: flex;
+        width: 0%;
+    }
+
     51% {
         display: flex;
     }
+
     60% {
         width: 100%;
     }
+
     90% {
         width: 100%;
     }
+
     99% {
         display: flex;
     }
+
     100% {
         width: 0%;
         display: none;
     }
 }
 
+@keyframes borderWhriteAnimation {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: #000;
+    }
+}
+
 .jd_home {
     display: flex;
     flex-direction: column;
-    background-color: red;
     min-height: 100vh;
     position: relative;
 
     & .jd_main {
-        background-color: green;
+        margin-top: 15px;
+        width: 100%;
+        padding: 0 5px;
 
         & .jd_presentation_name {
             display: flex;
             justify-content: center;
             list-style-type: none;
             padding: 0;
-            overflow: hidden;
+            height: 30px;
+            width: 100%;
+            align-items: center;
 
             & .jd_presentation_name_item {
-                display: flex;
-                justify-content: start;
-                background-color: purple;
+                overflow: hidden;
 
-                & :where(.jd_presentation_title_one,
-                    .jd_presentation_title_tow) {
-
-                    display: flex;
+                & :where(.jd_presentation_title_one, .jd_presentation_title_tow) {
+                    display: block;
+                    color: var(--jd_text_color);
                     font-size: var(--jd_title_font_size);
-                    color: var(--jd_tertiary_color);
                     font-weight: bold;
-                    letter-spacing: 1px;
-                    background-color: gold;
                     overflow: hidden;
                     text-wrap: nowrap;
+                    width: 0px;
+                    border-right: 3px solid var(--jd_text_color);
                 }
-                
+
                 & .jd_presentation_title_one {
-                    animation: nameAnimation 9s ease-in infinite;
+                    animation: mark .5s step-end infinite, writeName 15s steps(22, end) infinite;
+
+                    &::after {
+                        content: "Jobson de Oliveira Coutinho";
+                    }
                 }
-                
+
                 & .jd_presentation_title_tow {
-                    display: none;
-                    animation: profissionAnimation 9s ease-in infinite;
+                    animation: mark .5s step-end infinite, writeWork 15s steps(22, end) infinite;
+
+                    &::after {
+                        content: "Desenvolvedor Full-Stack";
+                    }
                 }
+
+                @keyframes mark {
+                    50% {
+                        border-right-color: transparent;
+                    }
+                }
+
+                @keyframes writeName {
+                    0% {
+                        display: block;
+                    }
+
+                    2% {
+                        width: 0;
+                    }
+
+                    10% {
+                        width: 204px;
+                    }
+
+                    40% {
+                        width: 204px;
+                    }
+
+                    47% {
+                        display: block;
+                    }
+
+                    48% {
+                        display: none;
+                        width: 0;
+                    }
+
+                    100% {
+                        width: 0;
+                        display: none;
+                    }
+                }
+
+                @keyframes writeWork {
+                    0% {
+                        width: 0;
+                        display: none;
+                    }
+
+                    51% {
+                        width: 0;
+                        display: none;
+                    }
+
+                    52% {
+                        width: 0;
+                        display: block;
+                    }
+
+                    60% {
+                        width: 187px;
+                    }
+
+                    90% {
+                        width: 187px;
+                    }
+
+                    98% {
+                        width: 0;
+                    }
+
+                    99% {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+
+        & .jd_sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            list-style-type: none;
+            row-gap: 10px;
+            padding: 0;
+            margin: 30px 0;
+
+            & .jd_sections_itens {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                & .jd_sections_titles {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: start;
+
+                    & .jd_personality_title {
+                        font-size: var(--jd_title_font_size);
+                        color: var(--jd_tertiary_color);
+                        font-weight: 550;
+                    }
+                }
+
+                & .jd_sections_images {
+
+                    & .jd_sections_images_background {
+                        width: 100%;
+                    }
+                }
+
+                & .jd_sections_texts {
+                    & .jd_sections_text {
+                        font-size: var(--jd_text_font_size);
+                        color: var(--jd_text_color);
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        & .jd_next_page {
+            display: flex;
+
+            & .jd_next_page_text {
+                color: var(--jd_tertiary_color);
+                font-size: var(--jd_text_font_size);
+                width: 100%;
+                text-align: end;
+                text-decoration: none;
+                cursor: pointer;
             }
         }
     }

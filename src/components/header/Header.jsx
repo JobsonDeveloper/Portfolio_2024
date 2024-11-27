@@ -11,7 +11,7 @@ import gifMario from '../../assets/icons/2d-mario-running.gif';
 import gifPacMan from '../../assets/icons/pacMan.gif';
 
 // Components
-import backgroundImageOne from "../../assets/images/imageOne.png";
+import backgroundImageOne from "../../assets/images/imageOne.svg";
 
 const JDLink = styled(Link)`
     text-decoration: none;

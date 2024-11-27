@@ -1,8 +1,8 @@
 import { Header } from '../../components/header/Header';
 import './Home.scss';
-import aboutMeImageOne from '../../assets/images/sobreMimBackgroundOne.png';
-import aboutMeImageTow from '../../assets/images/sobreMimBackgroundTow.png';
-import aboutMeImageTree from '../../assets/images/sobreMimBackgroundThree.png';
+import aboutMeImageOne from '../../assets/images/sobreMimBackgroundOne.svg';
+import aboutMeImageTow from '../../assets/images/sobreMimBackgroundTow.svg';
+import aboutMeImageTree from '../../assets/images/sobreMimBackgroundThree.svg';
 import { Link } from 'react-router-dom';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useEffect } from 'react';

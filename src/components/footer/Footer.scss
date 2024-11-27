@@ -1,0 +1,92 @@
+.jd_footer {
+    display: grid;
+    grid-template-areas:
+        "suggestions map"
+        "emails emails"
+        "assignments assignments"
+        "completion completion";
+    width: 100%;
+    background-color: var(--jd_quaternary_color);
+    gap: 40px;
+
+    & .jd_footer_list {
+        display: flex;
+        background-color: var(--jd_quaternary_color);
+        list-style-type: none;
+        padding: 0 10px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+
+        & .jd_footer_item {
+            color: var(--jd_primary_color);
+            cursor: pointer;
+        }
+
+        & .jd_footer_item_title {
+            font-size: var(--jd_subtitle_font_size);
+            padding-bottom: 10px;
+        }
+
+        & .jd_footer_item_element {
+            display: flex;
+            gap: 10px;
+
+            & .jd_footer_item_element_text {
+                font-size: var(--jd_text_font_size);
+                color: var(--jd_primary_color);
+                text-decoration: none;
+                padding: 0;
+            }
+
+            & .jd_assignments_links {
+                color: rgb(105, 183, 255);
+            }
+        }
+
+        & .jd_element_redes_link {
+            text-decoration: none;
+            color: var(--jd_primary_color);
+            cursor: pointer;
+
+            & .jd_element_redes {
+    
+                & .jd_footer_item_element_icon {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+    }
+
+    & .jd_list_suggestions {
+        grid-area: suggestions;
+    }
+
+    & .jd_list_map {
+        grid-area: map;
+    }
+
+    & .jd_list_emails {
+        grid-area: emails;
+    }
+
+    & .jd_list_assignments {
+        grid-area: assignments;
+    }
+
+    & .jd_footer_completion {
+        grid-area: completion;
+        border-top: 1px solid var(--jd_line_color);
+        padding: 15px 0;
+        width: 100%;
+        
+        & .jd_footer_completion_text {
+            color: var(--jd_primary_color);
+            font-size: var(--js_text_font_size_n2);
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}

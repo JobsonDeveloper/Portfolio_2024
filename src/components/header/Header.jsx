@@ -73,7 +73,7 @@ export const Header = () => {
 
                 <ul className="jd_options_list">
                     <li className="jd_options_item">
-                        <JDLink to='/' className='sh_options_links'>Sobre mim</JDLink>
+                        <JDLink to='/' className='sh_options_links'></JDLink>
                     </li>
                     <li className="jd_options_item">
                         <JDLink to='/qualificacoes' className='sh_options_links'>Qualificações</JDLink>

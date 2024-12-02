@@ -1,18 +1,3 @@
-:root {
-    --jd_primary_color: #fff;
-    --jd_secondary_color: #000;
-    --jd_tertiary_color: #2095c0;
-    --jd_quaternary_color: #0F2343;
-    --jd_quinary_color: #22EF80;
-    --jd_text_color: #444444;
-    --jd_line_color: #2a3f60;
-
-    --jd_title_font_size: 1.3rem;
-    --jd_subtitle_font_size: 1.2rem;
-    --jd_text_font_size: 1.1rem;
-    --js_text_font_size_n2: 1rem;
-}
-
 @keyframes nameAnimation {
     0% {
         width: 0%;
@@ -209,7 +194,7 @@
             list-style-type: none;
             row-gap: 10px;
             padding: 0;
-            margin:  30px 0 10px;
+            margin:  30px 0;
 
             & .jd_sections_itens {
                 display: flex;
@@ -244,35 +229,6 @@
                     }
                 }
             }
-
-            & .jd_personality_next_page {
-                display: flex;
-                flex-direction: row;
-                margin-top: 40px;
-
-                & .jd_next_page_text {
-                    color: var(--jd_tertiary_color);
-                    font-size: var(--jd_text_font_size);
-                    width: 100%;
-                    text-align: end;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-
-                & .jd_next_page_img {
-                    width: 35px;
-                    display: flex;
-                    position: relative;
-
-                    & .jd_next_page_icon {
-                        color: var(--jd_text_color);
-                        position: absolute;
-                        width: 30px;
-                        animation: nextAnimation 1s linear infinite;
-                    }
-                }
-
-            }
         }
 
     }
@@ -280,16 +236,3 @@
 
 }
 
-@keyframes nextAnimation {
-    from {
-        right: 0;
-    }
-
-    50% {
-        right: 5px;
-    }
-
-    to {
-        right: 0;
-    }
-}

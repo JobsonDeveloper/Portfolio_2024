@@ -1,0 +1,87 @@
+@keyframes animationContainer {
+    from {
+        width: 50px;
+        height: 50px;
+    }
+    50% {
+        width: 25px;
+        height: 25px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes animationItenOne {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes animationItenTwo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animationCircle {
+    from {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.jd_loading_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--jd_primary_color);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    
+    & .jd_loading_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        position: relative;
+        animation: animationContainer 3s linear infinite;
+        
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 3px;
+            border: 1px solid var(--jd_secondary_color);
+            animation: animationItenOne 3s linear infinite;
+        }
+        
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 3px;
+            border: 1px solid var(--jd_secondary_color);
+            animation: animationItenTwo 3s linear infinite;
+        }
+    }
+}

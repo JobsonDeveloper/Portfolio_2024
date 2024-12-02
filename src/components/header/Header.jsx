@@ -64,19 +64,19 @@ export const Header = () => {
                 />
             </article>
 
-            <ul className="jd_breadcrumbs">
-                <li className="jd_breadcrumbs_item">Sobre Mim</li>
-            </ul>
+            {/* <ul className="jd_breadcrumbs">
+                <li className="jd_breadcrumbs_item">Apresentação</li>
+            </ul> */}
 
             <Drawer open={open} onClose={changeOpenDrawer(false)} className='jd_options_drawer'>
                 <JDSubtitulo className='jd_options_subtitle'>Conheça mais sobre mim</JDSubtitulo>
 
                 <ul className="jd_options_list">
                     <li className="jd_options_item">
-                        <JDLink to='/' className='sh_options_links'></JDLink>
+                        <JDLink to='/' className='sh_options_links'>Apresentao</JDLink>
                     </li>
                     <li className="jd_options_item">
-                        <JDLink to='/qualificacoes' className='sh_options_links'>Qualificações</JDLink>
+                        <JDLink to='/qualifications' className='sh_options_links'>Qualificações</JDLink>
                     </li>
                     <li className="jd_options_item">
                         <JDLink to='/conhecimento' className='sh_options_links'>Conhecimentos</JDLink>

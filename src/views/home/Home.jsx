@@ -1,19 +1,21 @@
-import { Header } from '../../components/header/Header';
 import './Home.scss';
 import aboutMeImageOne from '../../assets/images/sobreMimBackgroundOne.svg';
 import aboutMeImageTow from '../../assets/images/sobreMimBackgroundTow.svg';
 import aboutMeImageTree from '../../assets/images/sobreMimBackgroundThree.svg';
 import { Link } from 'react-router-dom';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css'
 import Aos from 'aos';
+import { Header } from '../../components/header/Header';
 import { Footer } from '../../components/footer/Footer';
+import { Loading } from '../../components/loading/Loading';
 
 export const Home = () => {
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         Aos.init();
+        setLoading(false);
     }, []);
 
     return (
@@ -35,7 +37,7 @@ export const Home = () => {
                 <ul className="jd_sections jd_personality">
                     <li className="jd_sections_itens jd_personality_apresentation">
                         <div className="jd_sections_titles">
-                            <h2 className="jd_personality_title">Sobre mim</h2>
+                            <h2 className="jd_personality_title">Apresentação</h2>
                             <p className="jd_personality_subtitle">Me conheça um pouco</p>
                         </div>
                         <div className="jd_sections_images">
@@ -83,17 +85,15 @@ export const Home = () => {
                             </p>
                         </div>
                     </li>
-
-                    <li className="jd_sections_itens jd_personality_next_page">
-                        <Link to='/qualifications' className="jd_next_page_text">Qualificações</Link>
-                        <div className="jd_next_page_img">
-                            <NavigateNextIcon className='jd_next_page_icon' />
-                        </div>
-                    </li>
                 </ul>
             </section>
 
             <Footer />
+
+            {/* Loading */}
+            {loading &&
+                < Loading />
+            }
         </main >
     )
 }

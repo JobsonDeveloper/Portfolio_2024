@@ -15,7 +15,10 @@ export const Home = () => {
 
     useEffect(() => {
         Aos.init();
-        setLoading(false);
+        
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
     }, []);
 
     return (

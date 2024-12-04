@@ -14,11 +14,14 @@ import gifPacMan from '../../assets/icons/pacMan.gif';
 import backgroundImageOne from "../../assets/images/imageOne.svg";
 
 const JDLink = styled(Link)`
+    display: flex;
     text-decoration: none;
     font-size: var(--jd_text_font_size);
     color: var(--jd_secondary_color);
     cursor: pointer;
     transition: .5s;
+    width: 100%;
+    height: 100%;
 `;
 
 const JDSubtitulo = styled.h4`
@@ -64,30 +67,26 @@ export const Header = () => {
                 />
             </article>
 
-            {/* <ul className="jd_breadcrumbs">
-                <li className="jd_breadcrumbs_item">Apresentação</li>
-            </ul> */}
-
             <Drawer open={open} onClose={changeOpenDrawer(false)} className='jd_options_drawer'>
                 <JDSubtitulo className='jd_options_subtitle'>Conheça mais sobre mim</JDSubtitulo>
 
                 <ul className="jd_options_list">
                     <li className="jd_options_item">
-                        <JDLink to='/' className='sh_options_links'>Apresentao</JDLink>
+                        <JDLink to='/' className='jd_options_links'>Apresentao</JDLink>
                     </li>
                     <li className="jd_options_item">
-                        <JDLink to='/qualifications' className='sh_options_links'>Qualificações</JDLink>
+                        <JDLink to='/qualifications' className='jd_options_links'>Qualificações</JDLink>
                     </li>
                     <li className="jd_options_item">
-                        <JDLink to='/conhecimento' className='sh_options_links'>Conhecimentos</JDLink>
+                        <JDLink to='/Knowledge' className='jd_options_links'>Conhecimentos</JDLink>
                     </li>
                     <li className="jd_options_item">
-                        <JDLink to='/projetos' className='sh_options_links'>Projetos</JDLink>
+                        <JDLink to='/projetos' className='jd_options_links'>Projetos</JDLink>
                     </li>
                     <li className="jd_options_item">
                         <JDLink
                             to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link'
-                            className='sh_options_links'
+                            className='jd_options_links'
                             target='_blank'
                         >
                             Currículo

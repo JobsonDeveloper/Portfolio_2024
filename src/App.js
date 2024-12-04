@@ -4,6 +4,7 @@ import { Home } from './views/home/Home';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import { Qualifications } from './views/qualifications/Qualifications';
+import { Knowledge } from './views/knowledge/Knowledge';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route index exact path='/' element={<Home />} />
         <Route path='/qualifications' element={<Qualifications />} />
+        <Route path='/Knowledge' element={<Knowledge />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,6 +5,9 @@
 .jd_header_navigation {
     display: flex;
     padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 
     .jd_header {
         display: flex;
@@ -67,6 +70,8 @@
 }
 
 .jd_initial_image {
+    margin-top: 60px;
+
     & .jd_initial_image_img {
         max-width: 100%;
     }
@@ -105,13 +110,17 @@
         margin-top: 25px;
 
         & .jd_options_item {
-            padding: 10px 15px;
+            
             position: relative;
             cursor: pointer;
             transition: .5s;
 
             &:hover {
                 background-color: var(--jd_tertiary_color);
+            }
+
+            & .jd_options_links {
+                padding: 10px 15px;
             }
         }
     }

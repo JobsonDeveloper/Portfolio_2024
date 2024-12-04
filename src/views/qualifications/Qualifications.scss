@@ -1,6 +1,7 @@
 .jd_qualifications {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     & .jd_main {
         display: flex;
@@ -55,7 +56,7 @@
                     }
                 }
 
-                & .jd_main_curse {
+                & :where(.jd_main_curse, .jd_main_functions) {
                     display: flex;
                     flex-direction: column;
                     width: 100%;

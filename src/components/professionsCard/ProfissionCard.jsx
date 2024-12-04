@@ -7,17 +7,18 @@ export const ProfissionCard = (props) => {
         <Zoom in={props.showProfission}>
             <ul className="jd_main_profission_data">
                 <li className="jd_main_profission_item">
-                    <div className="jd_profission_title_type">
-                        <h6 className="jd_profission_subtitle">Empresa</h6>
-                        
-                        <p className="jd_profission_type_text">- {props.company}</p>
-                    </div>
-                    <p className="jd_profission_text">{props.position}</p>
+                    <h6 className="jd_profission_subtitle">Empresa</h6>
+                    <p className="jd_profission_text">{props.company}</p>
                 </li>
 
                 <li className="jd_main_profission_item">
                     <h6 className="jd_profission_subtitle">Função</h6>
                     <p className="jd_profission_text">{props.function}</p>
+                </li>
+
+                <li className="jd_main_profission_item">
+                    <h6 className="jd_profission_subtitle">Tipo de contrato</h6>
+                    <p className="jd_profission_text">{props.position}</p>
                 </li>
 
                 {/* <li className="jd_main_profission_item jd_profission_statusType">

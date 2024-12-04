@@ -1,0 +1,20 @@
+.jd_knowledge {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & .jd_main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        & .jd_page_name {
+            font-size: var(--jd_title_font_size);
+            color: var(--jd_tertiary_color);
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+    }
+}

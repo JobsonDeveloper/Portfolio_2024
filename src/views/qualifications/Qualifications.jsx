@@ -13,6 +13,7 @@ import backgroundFormations from '../../assets/images/backgroundFormacoes.svg';
 import backgroundExperiences from '../../assets/images/backgroundExperiencias.svg';
 import { Fade, Pagination, Zoom } from "@mui/material";
 import { CurseCard } from "../../components/curseCard/CurseCard";
+import { ProfissionCard } from "../../components/professionsCard/ProfissionCard";
 
 export const Qualifications = () => {
     const [loading, setLoading] = useState(true);
@@ -53,17 +54,17 @@ export const Qualifications = () => {
             <Header />
 
             <section className="jd_main">
-                <h2 className="jd_page_name">Qualificações</h2>
+                <h2 className="jd_page_name" >Qualificações</h2>
 
                 <ul className="jd_sections">
                     {/* Cursos realizados */}
                     <li className="jd_sections_itens">
-                        <article className="jd_sections_titles">
+                        <article className="jd_sections_titles" data-aos="fade-right">
                             <h2 className="jd_item_title">Cursos realizados</h2>
                             <p className="jd_item_subtitle">Conhecimentos adquiridos</p>
                         </article>
 
-                        <article className="jd_sections_images">
+                        <article className="jd_sections_images" data-aos="zoom-in">
                             <img
                                 src={backgroundFormations}
                                 alt="Desenho de pessoa olhando um caminho"
@@ -72,13 +73,14 @@ export const Qualifications = () => {
                             />
                         </article>
 
-                        <article className="jd_main_curse">
+                        <article className="jd_main_curse" data-aos="flip-left">
                             {/* ADS na UNIBRA */}
                             {cursePage === 1 &&
                                 <a
                                     href="https://www.grupounibra.com/"
                                     className="jd_curse_card_link"
-                                    target="_blank">
+                                    target="_blank"
+                                    >
                                     <CurseCard
                                         curse='Análise e Desenvolvimento do Sistemas'
                                         institution='UNIBRA - Centro Universitário Brasileiro'
@@ -138,12 +140,12 @@ export const Qualifications = () => {
 
                     {/* Experiências */}
                     <li className="jd_sections_itens">
-                        <article className="jd_sections_titles jd_title_right">
+                        <article className="jd_sections_titles jd_title_right" data-aos="fade-left">
                             <h2 className="jd_item_title">Experiências profissionais</h2>
                             <p className="jd_item_subtitle">Minha trajetória profissional</p>
                         </article>
 
-                        <article className="jd_sections_images">
+                        <article className="jd_sections_images" data-aos="zoom-in">
                             <img
                                 src={backgroundExperiences}
                                 alt="Desenho de pessoa olhando um caminho"
@@ -152,29 +154,27 @@ export const Qualifications = () => {
                             />
                         </article>
 
-                        <article className="jd_main_curse">
-                            {/* ADS na UNIBRA */}
+                        <article className="jd_main_functions" data-aos="flip-left">
+                            {/* Asistente de Sistemas / Desenvolvedor - UNIBRA */}
                             {profissionPage === 1 &&
-                                    <CurseCard
-                                        curse='Análise e Desenvolvimento do Sistemas'
-                                        institution='UNIBRA - Centro Universitário Brasileiro'
-                                        status='Cursando'
-                                        period='01/2022 - 12/2024'
-                                        showProfission={showProfission}
-                                        type='Graduação'
-                                    />
+                                <ProfissionCard
+                                    company='UNIBRA - Centro Universitário Brasileiro'
+                                    function='Asistente de Sistemas / Desenvolvedor'
+                                    period='01/2024 - 07/2024'
+                                    showProfission={showProfission}
+                                    position='Estágio'
+                                />
                             }
 
-                            {/* Full-Stack na EBAC */}
+                            {/* Auxiliar de Escritório - CidexFibra */}
                             {profissionPage === 2 &&
-                                    <CurseCard
-                                        curse='Desenvolvimento Full-Stack Java'
-                                        institution='EBAC - Escola Britânica de Artes Criativas e Tecnologia'
-                                        status='Cursando'
-                                        period='12/2024 - 12/2025'
-                                        showProfission={showProfission}
-                                        type='Profissionalizante'
-                                    />
+                                <ProfissionCard
+                                    company='Cidex Informática e Telecom'
+                                    function='Auxiliar de Escritório'
+                                    period='01/2021 - Momento atual'
+                                    showProfission={showProfission}
+                                    position='CLT'
+                                />
                             }
 
                             <article className="jd_curse_pagination">

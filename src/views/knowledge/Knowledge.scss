@@ -16,5 +16,42 @@
             text-align: center;
             padding: 15px 0;
         }
+
+        & .jd_sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            list-style-type: none;
+            row-gap: 40px;
+            padding: 0;
+            margin: 30px 0;
+
+            & .jd_sections_itens {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                & .jd_sections_titles {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: start;
+                    padding-bottom: 15px;
+
+                    & .jd_item_title {
+                        font-size: var(--jd_title_font_size);
+                        color: var(--jd_tertiary_color);
+                        font-weight: 550;
+                    }
+                }
+
+                & .jd_sections_images {
+
+                    & .jd_sections_images_background {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

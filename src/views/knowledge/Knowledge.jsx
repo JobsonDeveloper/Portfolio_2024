@@ -28,7 +28,24 @@ export const Knowledge = () => {
             <section className="jd_main">
                 <h2 className="jd_page_name">Conhecimentos</h2>
 
-                
+                <ul className="jd_sections">
+                    {/* Cursos realizados */}
+                    <li className="jd_sections_itens">
+                        <article className="jd_sections_titles" data-aos="fade-right">
+                            <h2 className="jd_item_title">Certificados</h2>
+                            <p className="jd_item_subtitle">Troféus alcançados com o tempo</p>
+                        </article>
+
+                        <article className="jd_sections_images" data-aos="zoom-in">
+                            <img
+                                src={backgroundCertificates}
+                                alt="Desenho de pessoa olhando um caminho"
+                                className='jd_sections_images_background'
+                                data-aos="zoom-in"
+                            />
+                        </article>
+                    </li>
+                </ul>
             </section>
 
             <Footer />

@@ -30,7 +30,7 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 5px;
-
+                
                 & .jd_sections_titles {
                     display: flex;
                     flex-direction: column;
@@ -43,12 +43,31 @@
                         color: var(--jd_tertiary_color);
                         font-weight: 550;
                     }
+
+                }
+
+                & .jd_title_right {
+                    align-items: end;
                 }
 
                 & .jd_sections_images {
 
                     & .jd_sections_images_background {
                         width: 100%;
+                    }
+                }
+
+                & .jd_main_certificates {
+                    display: flex;
+                    flex-direction: column;
+                    width: max-content;
+                    row-gap: 5px;
+                    align-items: center;                    
+
+                    & .jd_certificate_pagination {
+                        display: flex;
+                        width: 100%;
+                        justify-content: end;
                     }
                 }
             }

@@ -58,31 +58,31 @@ export const Footer = () => {
                 </li>
 
                 <li className="jd_footer_item jd_footer_item_element">
-                    <a
-                        href="/"
+                    <Link
+                        to="/"
                         className='jd_footer_item_element_text'
-                    >Apresentação</a>
+                    >Apresentação</Link>
                 </li>
 
                 <li className="jd_footer_item jd_footer_item_element">
-                    <a
-                        href="/qualifications"
+                    <Link
+                        to="/qualifications"
                         className='jd_footer_item_element_text'
-                    >Qualificações</a>
+                    >Qualificações</Link>
                 </li>
 
                 <li className="jd_footer_item jd_footer_item_element">
-                    <a
-                        href="/Knowledge"
+                    <Link
+                        to="/conhecimentos"
                         className='jd_footer_item_element_text'
-                    >Conhecimentos</a>
+                    >Conhecimentos</Link>
                 </li>
 
                 <li className="jd_footer_item jd_footer_item_element">
-                    <a
-                        href="/projects"
+                    <Link
+                        to="/projects"
                         className='jd_footer_item_element_text'
-                    >Projetos</a>
+                    >Projetos</Link>
                 </li>
             </ul>
 

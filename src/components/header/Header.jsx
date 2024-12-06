@@ -78,7 +78,7 @@ export const Header = () => {
                         <JDLink to='/qualifications' className='jd_options_links'>Qualificações</JDLink>
                     </li>
                     <li className="jd_options_item">
-                        <JDLink to='/Knowledge' className='jd_options_links'>Conhecimentos</JDLink>
+                        <JDLink to='/conhecimentos' className='jd_options_links'>Conhecimentos</JDLink>
                     </li>
                     <li className="jd_options_item">
                         <JDLink to='/projetos' className='jd_options_links'>Projetos</JDLink>

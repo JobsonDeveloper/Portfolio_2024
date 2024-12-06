@@ -1,0 +1,89 @@
+.jd_projects {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & .jd_main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+
+        & .jd_page_name {
+            font-size: var(--jd_title_font_size);
+            color: var(--jd_tertiary_color);
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        & .jd_sections {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            list-style-type: none;
+            row-gap: 40px;
+            padding: 0;
+            margin: 30px 0;
+
+            & .jd_sections_itens {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                & .jd_sections_titles {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: start;
+                    padding-bottom: 15px;
+
+                    & .jd_item_title {
+                        font-size: var(--jd_title_font_size);
+                        color: var(--jd_tertiary_color);
+                        font-weight: 550;
+                    }
+                }
+
+                & .jd_title_right {
+                    align-items: end;
+                }
+
+                & .jd_section_project {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+
+                    & .jd_sections_projetc_prevew {
+                        display: flex;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        border: 1px solid #7e7e7e42;
+
+                        & .jd_sections_projetc_image {
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+
+                    & .jd_sections_texts {
+                        display: flex;
+                        flex-direction: column;
+
+                        & .jd_sections_subtitle {
+                            font-size: var(--jd_text_font_size);
+                            color: var(--jd_secondary_color);
+                            font-weight: bold;
+                            padding: 10px 0 0;
+                        }
+                        & .jd_sections_text {
+                            font-size: var(--jd_text_font_size);
+                            color: var(--jd_text_color);
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

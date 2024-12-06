@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import { Qualifications } from './views/qualifications/Qualifications';
 import { Knowledge } from './views/knowledge/Knowledge';
+import { Projects } from './views/projects/Projects';
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route index exact path='/' element={<Home />} />
         <Route path='/qualifications' element={<Qualifications />} />
-        <Route path='/Knowledge' element={<Knowledge />} />
+        <Route path='/conhecimentos' element={<Knowledge />} />
+        <Route path='/projetos' element={<Projects/>} />
       </Routes>
     </BrowserRouter>
   );

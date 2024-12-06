@@ -22,6 +22,29 @@ import UBUnibraLogicFromProgramming from '../../assets/certificates/UNIBRA-Inten
 import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-com-Programacao-Orientada-a-Objetos.jpg';
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.jpg';
 
+// Icons Reacgt
+import { SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+
+
+import { Tilt } from 'react-tilt'
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { DiMysql } from "react-icons/di";
+import { TbBrandNpm } from "react-icons/tb";
+const defaultOptions = {
+    reverse: false,  // reverse the tilt direction
+    max: 35,     // max tilt rotation (degrees)
+    perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+    speed: 1000,   // Speed of the enter/exit transition
+    transition: true,   // Set a transition on enter/exit.
+    axis: null,   // What axis should be disabled. Can be X or Y.
+    reset: true,    // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
+
 export const Knowledge = () => {
     const [loading, setLoading] = useState(true);
     const [certificatePage, setCertificatePage] = useState(1);
@@ -143,6 +166,141 @@ export const Knowledge = () => {
                                 className='jd_sections_images_background'
                                 data-aos="zoom-in"
                             />
+                        </article>
+
+                        {/* Hard-Skills Front-End */}
+                        <article className="jd_hard_skills_container">
+                            <article className="jd_hard_skills_substitles">
+                                <h6 className="jd_hardk_skills_subtitles_title">Front-End</h6>
+                            </article>
+
+                            <ul className="jd_hard_skills_container_list">
+                                <Tilt options={defaultOptions}>
+                                    <li className="jd_hard_skills_item" title="Sass">
+                                        <SiSass className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="JavaScript">
+                                        <RiJavascriptFill className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="TypeScript">
+                                        <BiLogoTypescript className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="React">
+                                        <FaReact className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Ionic">
+                                        <SiIonic className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Material UI">
+                                        <SiMui className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Bootstrap">
+                                        <FaBootstrap className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                            </ul>
+                        </article>
+
+                        {/* Hard-Skills Back-End */}
+                        <article className="jd_hard_skills_container">
+                            <article className="jd_hard_skills_substitles">
+                                <h6 className="jd_hardk_skills_subtitles_title">Back-End</h6>
+                            </article>
+
+                            <ul className="jd_hard_skills_container_list">
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="PHP">
+                                        <FaPhp className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Laravel">
+                                        <FaLaravel className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="MySQL">
+                                        <DiMysql className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Java">
+                                        <FaJava className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Spring Boot">
+                                        <SiSpringboot className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                            </ul>
+                        </article>
+
+                        {/* Hard-Skills Oder Skills */}
+                        <article className="jd_hard_skills_container">
+                            <article className="jd_hard_skills_substitles">
+                                <h6 className="jd_hardk_skills_subtitles_title">Tecnologias utilizadas</h6>
+                            </article>
+
+                            <ul className="jd_hard_skills_container_list">
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Trello">
+                                        <FaTrello className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Figma">
+                                        <FaFigma className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Gimp">
+                                        <SiGimp className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Git">
+                                        <FaGitAlt className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="GitHub">
+                                        <FaGithub className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Android Stúdio">
+                                        <SiAndroidstudio className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Postman">
+                                        <SiPostman className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="NPM">
+                                        <TbBrandNpm className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="cPanel">
+                                        <FaCpanel className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                            </ul>
                         </article>
                     </li>
                 </ul>

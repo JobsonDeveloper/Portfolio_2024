@@ -34,6 +34,8 @@
             gap: 10px;
 
             & .jd_footer_item_element_text {
+                display: flex;
+                width: max-content;
                 font-size: var(--jd_text_font_size);
                 color: var(--jd_primary_color);
                 text-decoration: none;
@@ -46,6 +48,8 @@
         }
 
         & .jd_element_redes {
+            display: flex;
+            flex-wrap: wrap;
             margin-top: 20px;
 
             & .jd_element_redes_link {
@@ -90,5 +94,24 @@
             text-align: center;
             padding: 0 10px;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    .jd_footer {
+        grid-template-areas:
+        "suggestions map"
+        "emails assignments"
+        "completion completion";
+    }
+}
+
+@media (min-width: 768px) {
+    .jd_footer {
+        grid-template-areas:
+        "suggestions map emails assignments"
+        "completion completion completion completion";
+        gap: 0px;
+        row-gap: 20px;
     }
 }

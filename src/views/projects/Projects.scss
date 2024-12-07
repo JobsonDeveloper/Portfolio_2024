@@ -31,7 +31,7 @@
                 flex-direction: column;
                 row-gap: 5px;
 
-                & .jd_sections_titles {
+                & .jd_sections_titles_links {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
@@ -42,6 +42,26 @@
                         font-size: var(--jd_title_font_size);
                         color: var(--jd_tertiary_color);
                         font-weight: 550;
+                    }
+
+                    & .jd_sections_projetc_redirects {
+                        display: flex;
+                        list-style-type: none;
+                        padding: 0;
+                        column-gap: 15px;
+
+                        & .jd_projetc_redirect_item {
+                            & .jd_sections_projetc_links {
+                                text-decoration: none;
+                                color: var(--jd_secondary_color);
+
+                                & .jd_project_icon {
+                                    color: var(--jd_tertiary_color);
+                                }
+                            }
+                        }
+
+
                     }
                 }
 
@@ -56,13 +76,60 @@
 
                     & .jd_sections_projetc_prevew {
                         display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         overflow: hidden;
+                        row-gap: 10px;
+                        position: relative;
                         border-radius: 5px;
-                        border: 1px solid #7e7e7e42;
+
+                        &::after {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            top: -30px;
+                            left: -30px;
+                            border-left: 25px solid transparent;
+                            border-right: 25px solid transparent;
+                            border-bottom: 25px solid var(--jd_primary_color);
+                            position: absolute;
+                            transform: rotate(-45deg);
+                            animation: animationCircle 5s linear;
+                            transition: .5s;
+                        }
+
+                        &::before {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            bottom: -30px;
+                            right: -30px;
+                            border-left: 25px solid transparent;
+                            border-right: 25px solid transparent;
+                            border-bottom: 25px solid var(--jd_primary_color);
+                            position: absolute;
+                            transform: rotate(135deg);
+                            animation: animationCircle 5s linear;
+                            transition: .5s;
+                        }
+
+                        &:hover {
+                            &::after {
+                                top: -5px;
+                                left: -16px;
+                            }
+                            &::before {
+                                bottom: -5px;
+                                right: -16px;
+                            }
+                        }
 
                         & .jd_sections_projetc_image {
                             width: 100%;
                             cursor: pointer;
+                            border-radius: 5px;
+                            border: 1px solid #7e7e7e42;
                         }
                     }
 
@@ -76,6 +143,7 @@
                             font-weight: bold;
                             padding: 10px 0 0;
                         }
+
                         & .jd_sections_text {
                             font-size: var(--jd_text_font_size);
                             color: var(--jd_text_color);

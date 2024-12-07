@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useEffect, useState } from 'react';
 
 export const Footer = () => {
@@ -37,17 +38,35 @@ export const Footer = () => {
                 </li>
 
                 <li className="jd_footer_item jd_footer_item_element jd_element_redes">
-                    <Link to='www.linkedin.com/in/jobson-de-oliveira-coutinho-5882b9251' className="jd_element_redes_link">
+                    <Link
+                        to='www.linkedin.com/in/jobson-de-oliveira-coutinho-5882b9251'
+                        className="jd_element_redes_link"
+                        target='_blank'>
                         <LinkedInIcon className='jd_footer_item_element_icon' />
                     </Link>
-                    <Link to='https://github.com/JobsonDeveloper' className="jd_element_redes_link">
+                    <Link
+                        to='https://github.com/JobsonDeveloper'
+                        className="jd_element_redes_link"
+                        target='_blank'>
                         <GitHubIcon className='jd_footer_item_element_icon' />
                     </Link>
-                    <Link to='mailto:jobsondeveloper@gmail.com' className="jd_element_redes_link">
+                    <Link
+                        to='mailto:jobsondeveloper@gmail.com'
+                        className="jd_element_redes_link"
+                        target='_blank'>
                         <MailIcon className='jd_footer_item_element_icon' />
                     </Link>
-                    <Link to='https://api.whatsapp.com/send?phone=5581989403631&text=Bem%20vindo%20ao%20meu%20WhatsApp' className="jd_element_redes_link">
+                    <Link
+                        to='https://api.whatsapp.com/send?phone=5581989403631&text=Bem%20vindo%20ao%20meu%20WhatsApp'
+                        className="jd_element_redes_link"
+                        target='_blank'>
                         <WhatsAppIcon className='jd_footer_item_element_icon' />
+                    </Link>
+                    <Link
+                        to='https://youtube.com/@jcode44?si=G8yHNDqcAzW2C8k4'
+                        className="jd_element_redes_link"
+                        target='_blank'>
+                        <YouTubeIcon className='jd_footer_item_element_icon' />
                     </Link>
                 </li>
             </ul>

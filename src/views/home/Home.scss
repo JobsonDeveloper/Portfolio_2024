@@ -192,9 +192,10 @@
             flex-direction: column;
             justify-content: center;
             list-style-type: none;
+            overflow: hidden;
             row-gap: 10px;
             padding: 0;
-            margin:  30px 0;
+            margin: 30px 0;
 
             & .jd_sections_itens {
                 display: flex;
@@ -230,9 +231,154 @@
                 }
             }
         }
-
     }
-
-
 }
 
+@media (min-width: 768px) {
+    .jd_home {
+        & .jd_main {
+            & .jd_personality {
+                & .jd_personality_apresentation {
+                    display: grid;
+                    grid-template-areas:
+                        "title text"
+                        "image text";
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 20px;
+
+                    & .jd_presentation_titles {
+                        grid-area: title;
+                    }
+
+                    & .jd_presentation_image {
+                        grid-area: image;
+                    }
+
+                    & .jd_presentation_text {
+                        grid-area: text;
+                    }
+                }
+
+                & .jd_personality_history {
+                    display: grid;
+                    grid-template-areas:
+                        "text image";
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 20px;
+
+                    & .jd_history_img {
+                        grid-area: image;
+                    }
+
+                    & .jd_history_text {
+                        grid-area: text;
+                    }
+                }
+
+                & .jd_personality_walk {
+                    display: grid;
+                    grid-template-areas:
+                        "image text";
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 20px;
+
+                    & .jd_walk_img {
+                        grid-area: image;
+                    }
+
+                    & .jd_walk_text {
+                        grid-area: text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .jd_home {
+        & .jd_main {
+            & .jd_personality {
+                display: flex;
+                align-items: center;
+
+                & .jd_personality_apresentation {
+                    grid-template-areas:
+                        "title title"
+                        "image text";
+                    margin-top: 30px;
+
+                    & .jd_presentation_titles {
+                        align-items: center;
+                    }
+                }
+            }
+
+            & .jd_sections {
+                & .jd_sections_itens {
+                    & .jd_sections_images {
+                        & .jd_sections_images_background {
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .jd_home {
+        & .jd_main {
+            padding: 0 20px;
+
+            & .jd_personality {
+                display: flex;
+                align-items: center;
+
+                & .jd_personality_apresentation {
+                    column-gap: 50px;
+                }
+            }
+
+            & .jd_sections {
+                & .jd_sections_itens {
+                    & .jd_sections_images {
+                        & .jd_sections_images_background {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .jd_home {
+        & .jd_main {
+            & .jd_personality {
+                & .jd_personality_apresentation {}
+            }
+
+            & .jd_sections {
+                & .jd_sections_itens {
+                    & .jd_sections_images {
+                        & .jd_sections_images_background {
+                            width: 500px;
+                        }
+                    }
+
+                    & .jd_sections_texts {
+                        & .jd_sections_text {
+                            width: 700px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

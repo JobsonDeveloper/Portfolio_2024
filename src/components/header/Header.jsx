@@ -11,7 +11,8 @@ import gifMario from '../../assets/icons/2d-mario-running.gif';
 import gifPacMan from '../../assets/icons/pacMan.gif';
 
 // Components
-import backgroundImageOne from "../../assets/images/imageOne.svg";
+import imgApresentacaoOne from "../../assets/images/imgApresentacaoOne.svg";
+import imgApresentacaoTow from "../../assets/images/imgApresentacaoTow.png";
 
 const JDLink = styled(Link)`
     display: flex;
@@ -59,11 +60,59 @@ export const Header = () => {
                 </ul>
             </article>
 
+            <article className="jd_header_navigation_desktop_container">
+                <ul className="jd_header_navigation_desktop">
+                    <li className="jd_navigation_desktop_item jd_navigation_desktop_item_logo">
+                        <Link to="/" className='jd_navigation_desktop_item_logo_link'>
+                            <img src={logoImg} alt="Logo" className='jd_navigation_item_logo_img' />
+                            <p className="jd_navigation_item_site">
+                                jobsondeveloper
+                                <span className="jd_item_domain">.site</span>
+                            </p>
+                        </Link>
+                    </li>
+                    <li className="jd_navigation_desktop_item jd_navigation_desktop_item_links">
+                        <ul className="jd_navigation_desktop_links_list">
+                            <li className="jd_navigation_desktop_links_list_item">
+                                <Link to="/" className='jd_navigation_desktop_links_item_link'>
+                                    Apresentação
+                                </Link>
+                            </li>
+                            <li className="jd_navigation_desktop_links_list_item">
+                                <Link to="/qualifications" className='jd_navigation_desktop_links_item_link'>
+                                    Qualificações
+                                </Link>
+                            </li>
+                            <li className="jd_navigation_desktop_links_list_item">
+                                <Link to="/conhecimentos" className='jd_navigation_desktop_links_item_link'>
+                                    Conhecimentos
+                                </Link>
+                            </li>
+                            <li className="jd_navigation_desktop_links_list_item">
+                                <Link to="/projetos" className='jd_navigation_desktop_links_item_link'>
+                                    Projetos
+                                </Link>
+                            </li>
+                            <li className="jd_navigation_desktop_links_list_item">
+                                <Link to="https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link" className='jd_navigation_desktop_links_item_link'>
+                                    Currículo
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
             <article className="jd_initial_image">
                 <img
-                    src={backgroundImageOne}
+                    src={imgApresentacaoOne}
                     alt="Imagem de apresentação, contendo Jobson dentro de um escritório com computadores e códigos"
-                    className="jd_initial_image_img"
+                    className="jd_initial_image_imgOne"
+                />
+                <img
+                    src={imgApresentacaoTow}
+                    alt="Imagem de apresentação, contendo Jobson dentro de um escritório com computadores e códigos"
+                    className="jd_initial_image_imgTow"
                 />
             </article>
 

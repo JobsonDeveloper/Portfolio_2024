@@ -68,12 +68,25 @@
         }
     }
 }
+.jd_header_navigation_desktop_container {
+    display: none;
+    width: 100%;
+
+    & .jd_header_navigation_desktop {
+        width: 100%;
+    }
+}
 
 .jd_initial_image {
     margin-top: 60px;
 
-    & .jd_initial_image_img {
+    & .jd_initial_image_imgOne {
         max-width: 100%;
+    }
+
+    & .jd_initial_image_imgTow {
+        display: none;
+        width: 100%;
     }
 }
 
@@ -110,7 +123,7 @@
         margin-top: 25px;
 
         & .jd_options_item {
-            
+
             position: relative;
             cursor: pointer;
             transition: .5s;
@@ -221,5 +234,130 @@
 
     to {
         left: -150%;
+    }
+}
+
+@media (min-width: 768px) {
+    .jd_initial_image {
+        & .jd_initial_image_imgOne {
+            display: none;
+        }
+
+        & .jd_initial_image_imgTow {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .jd_header_navigation {
+        display: none;
+    }
+
+    .jd_initial_image {
+        margin: 0;
+    }
+
+    .jd_header_navigation_desktop_container {
+        display: flex;
+        width: 100%;
+    
+        & .jd_header_navigation_desktop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            padding: 10px 10px;
+            width: 100%;
+    
+            & .jd_navigation_desktop_item_logo {
+                display: flex;
+    
+                & .jd_navigation_desktop_item_logo_link {
+                    column-gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+    
+                    & .jd_navigation_item_logo_img {
+                        width: 50px;
+                    }
+    
+                    & .jd_navigation_item_site {
+                        margin: 0;
+                        font-size: var(--jd_text_font_size);
+                        font-weight: 600;
+                        color: var(--jd_text_color);
+    
+                        & .jd_item_domain {
+                            color: var(--jd_quinary_color);
+                        }
+                    }
+                }
+    
+            }
+    
+            & .jd_navigation_desktop_item_links {
+                display: flex;
+                height: max-content;
+    
+                & .jd_navigation_desktop_links_list {
+                    display: flex;
+                    list-style-type: none;
+                    padding: 0;
+                    column-gap: 20px;
+    
+                    & .jd_navigation_desktop_links_list_item {
+                        & .jd_navigation_desktop_links_item_link {
+                            display: flex;
+                            text-decoration: none;
+                            color: var(--jd_text_color);
+                            font-size: var(--jd_text_font_size);
+                            position: relative;
+                            transition: 1s;
+                            padding: 3px 0;
+    
+                            &::before {
+                                content: " ";
+                                width: 0%;
+                                height: 2px;
+                                background-color: var(--jd_secondary_color);
+                                position: absolute;
+                                bottom: 0;
+                                transition: 1s;
+                            }
+    
+                            &:hover {
+                                &::before {
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .jd_initial_image {
+        display: flex;
+        justify-content: center;
+        background-color: #102344;
+        // background: linear-gradient(to right, #152f5b, #2a3638);
+
+        & .jd_initial_image_imgTow {
+            width: 1400px;
+        }
+    }
+
+    .jd_header_navigation_desktop_container {
+        justify-content: center;
+        
+        & .jd_header_navigation_desktop {
+            width: 1400px;
+        }
     }
 }

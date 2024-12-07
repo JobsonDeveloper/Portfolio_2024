@@ -1,89 +1,93 @@
 .jd_footer {
-    display: grid;
-    grid-template-areas:
-        "suggestions map"
-        "emails emails"
-        "assignments assignments"
-        "completion completion";
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--jd_quaternary_color);
-    gap: 40px;
     padding-top: 10px;
+    gap: 20px;
 
-    & .jd_footer_list {
-        display: flex;
-        background-color: var(--jd_quaternary_color);
-        list-style-type: none;
-        padding: 0 10px;
-        gap: 5px;
-        display: flex;
-        flex-direction: column;
+    & .jd_footer_options {
+        display: grid;
+        grid-template-areas:
+            "suggestions map"
+            "emails emails"
+            "assignments assignments";
+        width: 100%;
+        gap: 40px;
 
-        & .jd_footer_item {
-            color: var(--jd_primary_color);
-            cursor: pointer;
-        }
-
-        & .jd_footer_item_title {
-            font-size: var(--jd_subtitle_font_size);
-            padding-bottom: 10px;
-        }
-
-        & .jd_footer_item_element {
+        & .jd_footer_list {
             display: flex;
-            gap: 10px;
-
-            & .jd_footer_item_element_text {
-                display: flex;
-                width: max-content;
-                font-size: var(--jd_text_font_size);
-                color: var(--jd_primary_color);
-                text-decoration: none;
-                padding: 0;
-            }
-
-            & .jd_assignments_links {
-                color: rgb(105, 183, 255);
-            }
-        }
-
-        & .jd_element_redes {
+            list-style-type: none;
+            padding: 0 10px;
+            gap: 5px;
             display: flex;
-            flex-wrap: wrap;
-            margin-top: 20px;
+            flex-direction: column;
 
-            & .jd_element_redes_link {
-                text-decoration: none;
+            & .jd_footer_item {
                 color: var(--jd_primary_color);
                 cursor: pointer;
+            }
 
-                & .jd_footer_item_element_icon {
-                    width: 25px;
-                    height: 25px;
+            & .jd_footer_item_title {
+                font-size: var(--jd_subtitle_font_size);
+                padding-bottom: 10px;
+            }
+
+            & .jd_footer_item_element {
+                display: flex;
+                gap: 10px;
+
+                & .jd_footer_item_element_text {
+                    display: flex;
+                    width: max-content;
+                    font-size: var(--jd_text_font_size);
+                    color: var(--jd_primary_color);
+                    text-decoration: none;
+                    padding: 0;
+                }
+
+                & .jd_assignments_links {
+                    color: rgb(105, 183, 255);
                 }
             }
+
+            & .jd_element_redes {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+
+                & .jd_element_redes_link {
+                    text-decoration: none;
+                    color: var(--jd_primary_color);
+                    cursor: pointer;
+
+                    & .jd_footer_item_element_icon {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+
         }
 
-    }
+        & .jd_list_suggestions {
+            grid-area: suggestions;
+        }
 
-    & .jd_list_suggestions {
-        grid-area: suggestions;
-    }
+        & .jd_list_map {
+            grid-area: map;
+        }
 
-    & .jd_list_map {
-        grid-area: map;
-    }
+        & .jd_list_emails {
+            grid-area: emails;
+        }
 
-    & .jd_list_emails {
-        grid-area: emails;
-    }
+        & .jd_list_assignments {
+            grid-area: assignments;
+        }
 
-    & .jd_list_assignments {
-        grid-area: assignments;
     }
 
     & .jd_footer_completion {
-        grid-area: completion;
         border-top: 1px solid var(--jd_line_color);
         padding: 15px 0;
         width: 100%;
@@ -99,19 +103,48 @@
 
 @media (min-width: 576px) {
     .jd_footer {
-        grid-template-areas:
-        "suggestions map"
-        "emails assignments"
-        "completion completion";
+        & .jd_footer_options {
+            grid-template-areas:
+                "suggestions map"
+                "emails assignments";
+        }
     }
 }
 
 @media (min-width: 768px) {
     .jd_footer {
-        grid-template-areas:
-        "suggestions map emails assignments"
-        "completion completion completion completion";
-        gap: 0px;
-        row-gap: 20px;
+
+        & .jd_footer_options {
+            grid-template-areas:
+                "suggestions map emails assignments";
+            gap: 0px;
+            row-gap: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .jd_footer {
+
+        & .jd_footer_options {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .jd_footer {
+        padding: 10px 20px 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .jd_footer {
+        align-items: center;
+
+        & .jd_footer_options {
+            width: 1400px;
+        }
     }
 }

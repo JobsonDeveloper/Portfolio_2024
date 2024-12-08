@@ -1,7 +1,7 @@
 import './Home.scss';
-import aboutMeImageOne from '../../assets/images/sobreMimBackgroundOne.svg';
-import aboutMeImageTow from '../../assets/images/sobreMimBackgroundTow.svg';
-import aboutMeImageTree from '../../assets/images/sobreMimBackgroundThree.svg';
+import aboutMeImageOne from '../../assets/images/sobreMimBackgroundOne.webp';
+import aboutMeImageTow from '../../assets/images/sobreMimBackgroundTow.webp';
+import aboutMeImageTree from '../../assets/images/sobreMimBackgroundThree.webp';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css'

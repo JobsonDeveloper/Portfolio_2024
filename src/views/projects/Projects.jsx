@@ -7,10 +7,10 @@ import 'aos/dist/aos.css'
 import Aos from 'aos';
 
 // Project pictures
-import imageSkillhub from '../../assets/projects/skillhub.png';
-import imagePortfolioDio from '../../assets/projects/portfolioDio.png';
+import imageSkillhub from '../../assets/projects/skillhub.webp';
+import imagePortfolioDio from '../../assets/projects/portfolioDio.webp';
 import imageJavaCalculator from '../../assets/projects/calculadoraJava.webp';
-import imageJsCalculator from '../../assets/projects/calculadoraJavaScript.png';
+import imageJsCalculator from '../../assets/projects/calculadoraJavaScript.webp';
 
 import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

@@ -9,8 +9,8 @@ import { Footer } from "../../components/footer/Footer";
 import { Loading } from "../../components/loading/Loading";
 
 // Backgrounds
-import backgroundFormations from '../../assets/images/backgroundFormacoes.svg';
-import backgroundExperiences from '../../assets/images/backgroundExperiencias.svg';
+import backgroundFormations from '../../assets/images/backgroundFormacoes.webp';
+import backgroundExperiences from '../../assets/images/backgroundExperiencias.webp';
 import { Fade, Pagination, Zoom } from "@mui/material";
 import { CurseCard } from "../../components/curseCard/CurseCard";
 import { ProfissionCard } from "../../components/professionsCard/ProfissionCard";
@@ -58,13 +58,14 @@ export const Qualifications = () => {
 
                 <ul className="jd_sections">
                     {/* Cursos realizados */}
-                    <li className="jd_sections_itens">
+                    <li className="jd_sections_itens jd_curses_container">
+
                         <article className="jd_sections_titles" data-aos="fade-right">
                             <h2 className="jd_item_title">Cursos realizados</h2>
                             <p className="jd_item_subtitle">Conhecimentos adquiridos</p>
                         </article>
 
-                        <article className="jd_sections_images" data-aos="zoom-in">
+                        <article className="jd_sections_images" data-aos="fade-right">
                             <img
                                 src={backgroundFormations}
                                 alt="Desenho de pessoa olhando um caminho"
@@ -73,73 +74,73 @@ export const Qualifications = () => {
                             />
                         </article>
 
-                        <article className="jd_main_curse" data-aos="flip-left">
-                            {/* ADS na UNIBRA */}
-                            {cursePage === 1 &&
-                                <a
-                                    href="https://www.grupounibra.com/"
-                                    className="jd_curse_card_link"
-                                    target="_blank"
-                                    >
-                                    <CurseCard
-                                        curse='Análise e Desenvolvimento do Sistemas'
-                                        institution='UNIBRA - Centro Universitário Brasileiro'
-                                        status='Cursando'
-                                        period='01/2022 - 12/2024'
-                                        showCurse={showCurse}
-                                        type='Graduação'
+                        <article className="jd_main_curse" data-aos="fade-left">
+                            <div className="jd_curse_container">
+                                {/* ADS na UNIBRA */}
+                                {cursePage === 1 &&
+                                    <a
+                                        href="https://www.grupounibra.com/"
+                                        className="jd_curse_card_link"
+                                        target="_blank"
+                                        >
+                                        <CurseCard
+                                            curse='Análise e Desenvolvimento do Sistemas'
+                                            institution='UNIBRA - Centro Universitário Brasileiro'
+                                            status='Cursando'
+                                            period='01/2022 - 12/2024'
+                                            showCurse={showCurse}
+                                            type='Graduação'
+                                        />
+                                    </a>
+                                }
+                                {/* Full-Stack na EBAC */}
+                                {cursePage === 2 &&
+                                    <a
+                                        href="https://ebaconline.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=course_0_all_google_search_all_brand_general_test-cpc&utm_content=c_11725014130%7Cadg_113925699836%7Cad_495020094646%7Cph_kwd-42555011%7Ckey_ebac%7Cdev_c%7Cpst_%7Crgnid_1031854%7Cplacement_&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoIxh7u5H2HSMfWHzVSz09yO2yi3Ik-IDHUp1JWv1NUAMk9n2El1iUxoC6N8QAvD_BwE"
+                                        className="jd_curse_card_link"
+                                        target="_blank">
+                                        <CurseCard
+                                            curse='Desenvolvimento Full-Stack Java'
+                                            institution='EBAC - Escola Britânica de Artes Criativas e Tecnologia'
+                                            status='Cursando'
+                                            period='12/2024 - 12/2025'
+                                            showCurse={showCurse}
+                                            type='Profissionalizante'
+                                        />
+                                    </a>
+                                }
+                                {/* Bootcamp Full-Stack na DIO */}
+                                {cursePage === 3 &&
+                                    <a
+                                        href="https://www.dio.me/"
+                                        className="jd_curse_card_link"
+                                        target="_blank">
+                                        <CurseCard
+                                            curse='TQI Fullstack Developer'
+                                            institution='DIO - Digital Innovation One'
+                                            status='Cursando'
+                                            period='11/2024 - 12/2024'
+                                            showCurse={showCurse}
+                                            type='Curso livre'
+                                        />
+                                    </a>
+                                }
+                                <article className="jd_curse_pagination">
+                                    <Pagination
+                                        count={3}
+                                        page={cursePage}
+                                        onChange={changeCursePage}
+                                        hidePrevButton
+                                        hideNextButton
                                     />
-                                </a>
-                            }
-
-                            {/* Full-Stack na EBAC */}
-                            {cursePage === 2 &&
-                                <a
-                                    href="https://ebaconline.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=course_0_all_google_search_all_brand_general_test-cpc&utm_content=c_11725014130%7Cadg_113925699836%7Cad_495020094646%7Cph_kwd-42555011%7Ckey_ebac%7Cdev_c%7Cpst_%7Crgnid_1031854%7Cplacement_&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoIxh7u5H2HSMfWHzVSz09yO2yi3Ik-IDHUp1JWv1NUAMk9n2El1iUxoC6N8QAvD_BwE"
-                                    className="jd_curse_card_link"
-                                    target="_blank">
-                                    <CurseCard
-                                        curse='Desenvolvimento Full-Stack Java'
-                                        institution='EBAC - Escola Britânica de Artes Criativas e Tecnologia'
-                                        status='Cursando'
-                                        period='12/2024 - 12/2025'
-                                        showCurse={showCurse}
-                                        type='Profissionalizante'
-                                    />
-                                </a>
-                            }
-
-                            {/* Bootcamp Full-Stack na DIO */}
-                            {cursePage === 3 &&
-                                <a
-                                    href="https://www.dio.me/"
-                                    className="jd_curse_card_link"
-                                    target="_blank">
-                                    <CurseCard
-                                        curse='TQI Fullstack Developer'
-                                        institution='DIO - Digital Innovation One'
-                                        status='Cursando'
-                                        period='11/2024 - 12/2024'
-                                        showCurse={showCurse}
-                                        type='Curso livre'
-                                    />
-                                </a>
-                            }
-
-                            <article className="jd_curse_pagination">
-                                <Pagination
-                                    count={3}
-                                    page={cursePage}
-                                    onChange={changeCursePage}
-                                    hidePrevButton
-                                    hideNextButton
-                                />
-                            </article>
+                                </article>
+                            </div>
                         </article>
+
                     </li>
 
                     {/* Experiências */}
-                    <li className="jd_sections_itens">
+                    <li className="jd_sections_itens jd_experience_container">
                         <article className="jd_sections_titles jd_title_right" data-aos="fade-left">
                             <h2 className="jd_item_title">Experiências profissionais</h2>
                             <p className="jd_item_subtitle">Minha trajetória profissional</p>
@@ -155,37 +156,37 @@ export const Qualifications = () => {
                         </article>
 
                         <article className="jd_main_functions" data-aos="flip-left">
-                            {/* Asistente de Sistemas / Desenvolvedor - UNIBRA */}
-                            {profissionPage === 1 &&
-                                <ProfissionCard
-                                    company='UNIBRA - Centro Universitário Brasileiro'
-                                    function='Asistente de Sistemas / Desenvolvedor'
-                                    period='01/2024 - 07/2024'
-                                    showProfission={showProfission}
-                                    position='Estágio'
-                                />
-                            }
-
-                            {/* Auxiliar de Escritório - CidexFibra */}
-                            {profissionPage === 2 &&
-                                <ProfissionCard
-                                    company='Cidex Informática e Telecom'
-                                    function='Auxiliar de Escritório'
-                                    period='01/2021 - Momento atual'
-                                    showProfission={showProfission}
-                                    position='CLT'
-                                />
-                            }
-
-                            <article className="jd_curse_pagination">
-                                <Pagination
-                                    count={2}
-                                    page={profissionPage}
-                                    onChange={changeProfissionPage}
-                                    hidePrevButton
-                                    hideNextButton
-                                />
-                            </article>
+                            <div className="jd_functions_container">
+                                {/* Asistente de Sistemas / Desenvolvedor - UNIBRA */}
+                                {profissionPage === 1 &&
+                                    <ProfissionCard
+                                        company='UNIBRA - Centro Universitário Brasileiro'
+                                        function='Asistente de Sistemas / Desenvolvedor'
+                                        period='01/2024 - 07/2024'
+                                        showProfission={showProfission}
+                                        position='Estágio'
+                                    />
+                                }
+                                {/* Auxiliar de Escritório - CidexFibra */}
+                                {profissionPage === 2 &&
+                                    <ProfissionCard
+                                        company='Cidex Informática e Telecom'
+                                        function='Auxiliar de Escritório'
+                                        period='01/2021 - Momento atual'
+                                        showProfission={showProfission}
+                                        position='CLT'
+                                    />
+                                }
+                                <article className="jd_curse_pagination">
+                                    <Pagination
+                                        count={2}
+                                        page={profissionPage}
+                                        onChange={changeProfissionPage}
+                                        hidePrevButton
+                                        hideNextButton
+                                    />
+                                </article>
+                            </div>
                         </article>
                     </li>
                 </ul>

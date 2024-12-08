@@ -11,8 +11,8 @@ import gifMario from '../../assets/icons/2d-mario-running.gif';
 import gifPacMan from '../../assets/icons/pacMan.gif';
 
 // Components
-import imgApresentacaoOne from "../../assets/images/imgApresentacaoOne.svg";
-import imgApresentacaoTow from "../../assets/images/imgApresentacaoTow.png";
+import imgApresentacaoOne from "../../assets/images/imgApresentacaoOne.webp";
+import imgApresentacaoTow from "../../assets/images/imgApresentacaoTow.webp";
 
 const JDLink = styled(Link)`
     display: flex;

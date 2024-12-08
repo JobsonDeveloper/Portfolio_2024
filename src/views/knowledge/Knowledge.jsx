@@ -8,19 +8,19 @@ import { Loading } from "../../components/loading/Loading";
 import { Pagination } from "@mui/material";
 
 // Backgrounds
-import backgroundCertificates from '../../assets/images/backgroundCertificados.svg';
-import backgroundHardSkills from '../../assets/images/backgroundHardSkills.svg';
+import backgroundCertificates from '../../assets/images/backgroundCertificados.webp';
+import backgroundHardSkills from '../../assets/images/backgroundHardSkills.webp';
 import { CertificatesCard } from "../../components/certificatesCard/CertificatesCard";
 
 // Certificates
-import DioReactAndTypeScript from '../../assets/certificates/DIO-Paginas-com-React-e-TypeScript.jpg';
-import DioJavaScriptDebuggingError from '../../assets/certificates/DIO-Debugging-e-Error-Handling-JavaScript.jpg';
-import DioJavaScriptFunctions from '../../assets/certificates/DIO-Dominando-Funcoes-JavaScript.jpg';
-import DioIntroductFomGitAndGitHub from '../../assets/certificates/DIO-Introducao-ao-Git-e-GitHub.jpg';
-import DioOrientationFromObject from '../../assets/certificates/DIO-Orientacao-a-Objetos-com-JavaScript.jpg';
-import UBUnibraLogicFromProgramming from '../../assets/certificates/UNIBRA-Intencivo-de-Logica-de-Programacao-Java.jpg';
-import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-com-Programacao-Orientada-a-Objetos.jpg';
-import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.jpg';
+import DioReactAndTypeScript from '../../assets/certificates/DIO-Paginas-com-React-e-TypeScript.webp';
+import DioJavaScriptDebuggingError from '../../assets/certificates/DIO-Debugging-e-Error-Handling-JavaScript.webp';
+import DioJavaScriptFunctions from '../../assets/certificates/DIO-Dominando-Funcoes-JavaScript.webp';
+import DioIntroductFomGitAndGitHub from '../../assets/certificates/DIO-Introducao-ao-Git-e-GitHub.webp';
+import DioOrientationFromObject from '../../assets/certificates/DIO-Orientacao-a-Objetos-com-JavaScript.webp';
+import UBUnibraLogicFromProgramming from '../../assets/certificates/UNIBRA-Intencivo-de-Logica-de-Programacao-Java.webp';
+import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-com-Programacao-Orientada-a-Objetos.webp';
+import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
 import { SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";

@@ -92,7 +92,7 @@ export const Footer = () => {
                     </li>
                     <li className="jd_footer_item jd_footer_item_element">
                         <Link
-                            to="/projects"
+                            to="/projetos"
                             className='jd_footer_item_element_text'
                         >Projetos</Link>
                     </li>

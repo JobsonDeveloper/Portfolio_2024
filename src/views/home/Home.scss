@@ -223,10 +223,15 @@
                 }
 
                 & .jd_sections_texts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
                     & .jd_sections_text {
                         font-size: var(--jd_text_font_size);
                         color: var(--jd_text_color);
                         text-align: left;
+                        text-indent: 10px;
                     }
                 }
             }

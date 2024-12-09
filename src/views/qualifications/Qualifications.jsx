@@ -82,7 +82,7 @@ export const Qualifications = () => {
                                         href="https://www.grupounibra.com/"
                                         className="jd_curse_card_link"
                                         target="_blank"
-                                        >
+                                    >
                                         <CurseCard
                                             curse='Análise e Desenvolvimento do Sistemas'
                                             institution='UNIBRA - Centro Universitário Brasileiro'
@@ -93,8 +93,24 @@ export const Qualifications = () => {
                                         />
                                     </a>
                                 }
-                                {/* Full-Stack na EBAC */}
+                                {/* Bootcamp Full-Stack na DIO */}
                                 {cursePage === 2 &&
+                                    <a
+                                        href="https://www.dio.me/"
+                                        className="jd_curse_card_link"
+                                        target="_blank">
+                                        <CurseCard
+                                            curse='TQI Fullstack Developer'
+                                            institution='DIO - Digital Innovation One'
+                                            status='Cursando'
+                                            period='11/2024 - 12/2024'
+                                            showCurse={showCurse}
+                                            type='Bootcamp'
+                                        />
+                                    </a>
+                                }
+                                {/* Full-Stack na EBAC */}
+                                {cursePage === 3 &&
                                     <a
                                         href="https://ebaconline.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=course_0_all_google_search_all_brand_general_test-cpc&utm_content=c_11725014130%7Cadg_113925699836%7Cad_495020094646%7Cph_kwd-42555011%7Ckey_ebac%7Cdev_c%7Cpst_%7Crgnid_1031854%7Cplacement_&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoIxh7u5H2HSMfWHzVSz09yO2yi3Ik-IDHUp1JWv1NUAMk9n2El1iUxoC6N8QAvD_BwE"
                                         className="jd_curse_card_link"
@@ -106,22 +122,6 @@ export const Qualifications = () => {
                                             period='12/2024 - 12/2025'
                                             showCurse={showCurse}
                                             type='Profissionalizante'
-                                        />
-                                    </a>
-                                }
-                                {/* Bootcamp Full-Stack na DIO */}
-                                {cursePage === 3 &&
-                                    <a
-                                        href="https://www.dio.me/"
-                                        className="jd_curse_card_link"
-                                        target="_blank">
-                                        <CurseCard
-                                            curse='TQI Fullstack Developer'
-                                            institution='DIO - Digital Innovation One'
-                                            status='Cursando'
-                                            period='11/2024 - 12/2024'
-                                            showCurse={showCurse}
-                                            type='Curso livre'
                                         />
                                     </a>
                                 }
@@ -146,7 +146,7 @@ export const Qualifications = () => {
                             <p className="jd_item_subtitle">Minha trajetória profissional</p>
                         </article>
 
-                        <article className="jd_sections_images" data-aos="zoom-in">
+                        <article className="jd_sections_images" data-aos="fade-left">
                             <img
                                 src={backgroundExperiences}
                                 alt="Desenho de pessoa olhando um caminho"
@@ -155,7 +155,7 @@ export const Qualifications = () => {
                             />
                         </article>
 
-                        <article className="jd_main_functions" data-aos="flip-left">
+                        <article className="jd_main_functions" data-aos="fade-right">
                             <div className="jd_functions_container">
                                 {/* Asistente de Sistemas / Desenvolvedor - UNIBRA */}
                                 {profissionPage === 1 &&
@@ -177,7 +177,7 @@ export const Qualifications = () => {
                                         position='CLT'
                                     />
                                 }
-                                <article className="jd_curse_pagination">
+                                <article className="jd_functions_pagination">
                                     <Pagination
                                         count={2}
                                         page={profissionPage}

@@ -76,22 +76,22 @@ export const Knowledge = () => {
 
                 <ul className="jd_sections">
                     {/* Cursos realizados */}
-                    <li className="jd_sections_itens">
+                    <li className="jd_sections_itens jd_certificates">
                         <article className="jd_sections_titles" data-aos="fade-right">
                             <h2 className="jd_item_title">Certificados</h2>
                             <p className="jd_item_subtitle">Troféus alcançados com o tempo</p>
                         </article>
 
-                        <article className="jd_sections_images" data-aos="zoom-in">
+                        <article className="jd_sections_images">
                             <img
                                 src={backgroundCertificates}
                                 alt="Desenho de pessoa olhando um caminho"
                                 className='jd_sections_images_background'
-                                data-aos="zoom-in"
+                                data-aos="fade-right"
                             />
                         </article>
 
-                        <article className="jd_main_certificates">
+                        <article className="jd_main_certificates" data-aos="fade-left">
                             {certificatePage === 1 &&
                                 <CertificatesCard
                                     certificateUrl={DioReactAndTypeScript}
@@ -153,23 +153,23 @@ export const Knowledge = () => {
                         </article>
                     </li>
 
-                    <li className="jd_sections_itens">
+                    {/* Hard-Skills */}
+                    <li className="jd_sections_itens jd_hard_skills">
                         <article className="jd_sections_titles jd_title_right" data-aos="fade-left">
                             <h2 className="jd_item_title">Hard Skills</h2>
                             <p className="jd_item_subtitle">Tecnologias conhecidas</p>
                         </article>
 
-                        <article className="jd_sections_images" data-aos="zoom-in">
+                        <article className="jd_sections_images" data-aos="fade-left">
                             <img
                                 src={backgroundHardSkills}
                                 alt="Desenho de pessoa olhando um caminho"
                                 className='jd_sections_images_background'
-                                data-aos="zoom-in"
                             />
                         </article>
 
                         {/* Hard-Skills Front-End */}
-                        <article className="jd_hard_skills_container">
+                        <article className="jd_hard_skills_container jd_front_end" data-aos="fade-right">
                             <article className="jd_hard_skills_substitles">
                                 <h6 className="jd_hardk_skills_subtitles_title">Front-End</h6>
                             </article>
@@ -214,7 +214,7 @@ export const Knowledge = () => {
                         </article>
 
                         {/* Hard-Skills Back-End */}
-                        <article className="jd_hard_skills_container">
+                        <article className="jd_hard_skills_container jd_back_end" data-aos="fade-right">
                             <article className="jd_hard_skills_substitles">
                                 <h6 className="jd_hardk_skills_subtitles_title">Back-End</h6>
                             </article>
@@ -249,7 +249,7 @@ export const Knowledge = () => {
                         </article>
 
                         {/* Hard-Skills Oder Skills */}
-                        <article className="jd_hard_skills_container">
+                        <article className="jd_hard_skills_container jd_oder_skills" data-aos="fade-right">
                             <article className="jd_hard_skills_substitles">
                                 <h6 className="jd_hardk_skills_subtitles_title">Tecnologias utilizadas</h6>
                             </article>

@@ -51,6 +51,9 @@
                 }
 
                 & .jd_sections_images {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     & .jd_sections_images_background {
                         width: 100%;
@@ -63,6 +66,8 @@
                     width: max-content;
                     row-gap: 5px;
                     align-items: center;
+                    width: 100%;
+                    min-height: 250px;
 
                     & .jd_certificate_pagination {
                         display: flex;
@@ -114,6 +119,178 @@
 
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .jd_knowledge {
+        & .jd_main {
+            & .jd_sections {
+                row-gap: 5 0px;
+
+                & .jd_sections_itens {
+                    & .jd_main_certificates {
+                        row-gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .jd_knowledge {
+        & .jd_main {
+            & .jd_sections {
+                & .jd_certificates {
+                    display: grid;
+                    grid-template-areas: 
+                    "title title"
+                    "image certificate";
+                    column-gap: 10px;
+                    justify-content: space-around;
+                    
+                    & .jd_sections_titles {
+                        display: flex;
+                        align-items: center;
+                        grid-area: title;
+                    }
+                    
+                    & .jd_sections_images {
+                        display: flex;
+                        align-items: center;
+                        grid-area: image;
+                    }
+                    
+                    & .jd_main_certificates {
+                        grid-area: certificate;
+                    }
+                }
+                
+                & .jd_hard_skills {
+                    display: grid;
+                    grid-template-areas: 
+                    "title title"
+                    "frontEnd image"
+                    "backEnd image"
+                    "oderSkills oderSkills";
+                    justify-content: space-around;
+
+                    & .jd_sections_titles {
+                        display: flex;
+                        align-items: center;
+                        grid-area: title;
+                    }
+
+                    & .jd_sections_images {
+                        display: flex;
+                        align-items: center;
+                        grid-area: image;
+                    }
+
+                    & .jd_front_end {
+                        grid-area: frontEnd;
+                    }
+
+                    & .jd_back_end {
+                        grid-area: backEnd;
+                    }
+
+                    & .jd_oder_skills {
+                        grid-area: oderSkills;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .jd_knowledge {
+        & .jd_main {
+            & .jd_sections {
+                & .jd_certificates {
+                    display: grid;
+                    grid-template-areas: 
+                    "title title"
+                    "image certificate";
+                    column-gap: 10px;
+
+                    & .jd_sections_titles {
+                        grid-area: title;
+                        justify-content: center;
+                    }
+
+                    & .jd_sections_images {
+                        display: flex;
+                        align-items: center;
+                        grid-area: image;
+
+                        & .jd_sections_images_background {
+                            width: 450px;
+                        }
+                    }
+
+                    & .jd_main_certificates {
+                        grid-area: certificate;
+                    }
+                }
+
+                & .jd_hard_skills {
+                    display: grid;
+                    grid-template-areas: 
+                    "title title"
+                    "frontEnd image"
+                    "backEnd image"
+                    "oderSkills image";
+
+                    & .jd_sections_titles {
+                        grid-area: title;
+                        justify-content: center;
+                    }
+
+                    & .jd_sections_images {
+                        display: flex;
+                        align-items: center;
+                        grid-area: image;
+
+                        & .jd_sections_images_background {
+                            width: 450px;
+                        }
+                    }
+
+                    & .jd_front_end {
+                        grid-area: frontEnd;
+                    }
+
+                    & .jd_back_end {
+                        grid-area: backEnd;
+                    }
+
+                    & .jd_oder_skills {
+                        grid-area: oderSkills;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .jd_knowledge {
+        & .jd_main {
+            & .jd_sections {
+                align-items: center;
+
+                & .jd_certificates {
+                    width: 1400px;
+                }
+
+                & .jd_hard_skills {
+                    width: 1400px;
                 }
             }
         }

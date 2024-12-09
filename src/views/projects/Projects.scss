@@ -119,6 +119,7 @@
                                 top: -5px;
                                 left: -16px;
                             }
+
                             &::before {
                                 bottom: -5px;
                                 right: -16px;
@@ -150,6 +151,102 @@
                             text-align: left;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .jd_projects {
+        & .jd_main {
+            & .jd_sections {
+                & .jd_section_skillhub {
+                    & .jd_section_project {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 30px;
+
+                        & .jd_sections_projetc_prevew {
+                            justify-content: start;
+                        }
+                    }
+                }
+
+                & .jd_section_portfolio_dio {
+                    & .jd_section_project {
+                        display: grid;
+                        grid-template-areas:
+                            "text image"
+                            "text image";
+                        column-gap: 30px;
+
+                        & .jd_sections_projetc_prevew {
+                            grid-area: image;
+                            justify-content: start;
+                        }
+
+                        & .jd_sections_texts {
+                            grid-area: text;
+                        }
+                    }
+                }
+
+                & .jd_section_js_calculator {
+                    & .jd_section_project {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: 30px;
+
+                        & .jd_sections_projetc_prevew {
+                            justify-content: start;
+                        }
+                    }
+                }
+
+                & .jd_section_java_calculator {
+                    & .jd_section_project {
+                        display: grid;
+                        grid-template-areas:
+                            "text image"
+                            "text image";
+                        column-gap: 30px;
+
+                        & .jd_sections_projetc_prevew {
+                            grid-area: image;
+                            justify-content: start;
+                        }
+
+                        & .jd_sections_texts {
+                            grid-area: text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .jd_projects {
+        & .jd_main {
+            & .jd_sections {
+                align-items: center;
+
+                & .jd_section_skillhub {
+                    width: 1400px;
+                }
+                
+                & .jd_section_portfolio_dio {
+                    width: 1400px;
+                }
+                
+                & .jd_section_js_calculator {
+                    width: 1400px;
+                }
+                
+                & .jd_section_java_calculator {
+                    width: 1400px;
                 }
             }
         }

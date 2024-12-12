@@ -30,7 +30,6 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 5px;
-                align-items: center;
 
                 & .jd_sections_titles {
                     display: flex;
@@ -120,6 +119,26 @@
                             }
 
                         }
+                    }
+                }
+            }
+
+            & .jd_certificates {
+                align-items: center;
+                row-gap: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .jd_knowledge {
+        & .jd_main {
+            & .jd_sections {
+                & .jd_sections_itens {
+                    & .jd_main_certificates {
+                        width: 355px;
+                        height: 290px;
                     }
                 }
             }

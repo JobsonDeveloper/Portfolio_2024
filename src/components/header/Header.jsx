@@ -67,7 +67,7 @@ export const Header = () => {
                             <img src={logoImg} alt="Logo" className='jd_navigation_item_logo_img' />
                             <p className="jd_navigation_item_site">
                                 jobsondeveloper
-                                <span className="jd_item_domain">.site</span>
+                                <span className="jd_item_domain">.vercel</span>
                             </p>
                         </Link>
                     </li>

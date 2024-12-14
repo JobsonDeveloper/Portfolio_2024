@@ -29,7 +29,7 @@
             & .jd_sections_itens {
                 display: flex;
                 flex-direction: column;
-                row-gap: 5px;
+                width: 100%;
 
                 & .jd_sections_titles_links {
                     display: flex;
@@ -65,92 +65,73 @@
                     }
                 }
 
-                & .jd_title_right {
-                    align-items: end;
-                }
-
-                & .jd_section_project {
+                & .jd_sections_projetc_prevew {
                     display: flex;
-                    flex-direction: column;
-                    row-gap: 10px;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    overflow: hidden;
+                    border-radius: 5px;
 
-                    & .jd_sections_projetc_prevew {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        overflow: hidden;
-                        row-gap: 10px;
-                        position: relative;
+                    &::after, &::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border: 1px solid transparent;
+                        position: absolute;
+                        animation: animationCircle 5s linear;
+                        transition: 2s;
                         border-radius: 5px;
+                    }
 
+                    &:hover {
+                        &::after, &::before {
+                            border-color: var(--jd_primary_color);
+                        }
+                        
                         &::after {
-                            content: "";
-                            width: 0;
-                            height: 0;
-                            top: -30px;
-                            left: -30px;
-                            border-left: 25px solid transparent;
-                            border-right: 25px solid transparent;
-                            border-bottom: 25px solid var(--jd_primary_color);
-                            position: absolute;
-                            transform: rotate(-45deg);
-                            animation: animationCircle 5s linear;
-                            transition: .5s;
+                            width: 90%;
+                            height: 90%;
+                            animation: 15s animationProjectImageAfter linear infinite;
+                            transform: rotate(-180deg);
                         }
-
+                        
                         &::before {
-                            content: "";
-                            width: 0;
-                            height: 0;
-                            bottom: -30px;
-                            right: -30px;
-                            border-left: 25px solid transparent;
-                            border-right: 25px solid transparent;
-                            border-bottom: 25px solid var(--jd_primary_color);
-                            position: absolute;
-                            transform: rotate(135deg);
-                            animation: animationCircle 5s linear;
-                            transition: .5s;
-                        }
-
-                        &:hover {
-                            &::after {
-                                top: -5px;
-                                left: -16px;
-                            }
-
-                            &::before {
-                                bottom: -5px;
-                                right: -16px;
-                            }
-                        }
-
-                        & .jd_sections_projetc_image {
-                            width: 100%;
-                            cursor: pointer;
-                            border-radius: 5px;
-                            border: 1px solid #7e7e7e42;
+                            width: 85%;
+                            height: 85%;
+                            animation: 15s animationProjectImageBefore linear infinite;
+                            transform: rotate(180deg);
                         }
                     }
 
-                    & .jd_sections_texts {
-                        display: flex;
-                        flex-direction: column;
+                    // @keyframes animationProjectImageAfter {
+                    //     from {
+                    //         transform: rotate(0deg);
+                    //     }
+                    //     to {
+                    //         transform: rotate(360deg);
+                    //     }
+                    // }
 
-                        & .jd_sections_subtitle {
-                            font-size: var(--jd_text_font_size);
-                            color: var(--jd_secondary_color);
-                            font-weight: bold;
-                            padding: 10px 0 0;
-                        }
+                    // @keyframes animationProjectImageBefore {
+                    //     from {
+                    //         transform: rotate(0deg);
+                    //     }
+                    //     to {
+                    //         transform: rotate(-360deg);
+                    //     }
+                    // }
 
-                        & .jd_sections_text {
-                            font-size: var(--jd_text_font_size);
-                            color: var(--jd_text_color);
-                            text-align: left;
-                        }
+                    & .jd_sections_projetc_image {
+                        width: 100%;
                     }
+                }
+            }
+
+            & .jd_card_right {
+                & .jd_sections_titles_links {
+                    align-items: end;
                 }
             }
         }
@@ -161,64 +142,41 @@
     .jd_projects {
         & .jd_main {
             & .jd_sections {
-                & .jd_section_skillhub {
-                    & .jd_section_project {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        column-gap: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 50px;
 
-                        & .jd_sections_projetc_prevew {
-                            justify-content: start;
+                & .jd_sections_itens {
+                    width: 100%;
+
+                    & .jd_sections_projetc_prevew {
+                        width: max-content;
+
+                        & .jd_sections_projetc_image {
+                            width: 476px;
+                            height: 267px;
                         }
                     }
                 }
 
-                & .jd_section_portfolio_dio {
-                    & .jd_section_project {
-                        display: grid;
-                        grid-template-areas:
-                            "text image"
-                            "text image";
-                        column-gap: 30px;
-
-                        & .jd_sections_projetc_prevew {
-                            grid-area: image;
-                            justify-content: start;
-                        }
-
-                        & .jd_sections_texts {
-                            grid-area: text;
-                        }
-                    }
+                & .jd_card_right {
+                    align-items: end;
                 }
+            }
+        }
+    }
+}
 
-                & .jd_section_js_calculator {
-                    & .jd_section_project {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        column-gap: 30px;
-
-                        & .jd_sections_projetc_prevew {
-                            justify-content: start;
-                        }
-                    }
-                }
-
-                & .jd_section_java_calculator {
-                    & .jd_section_project {
-                        display: grid;
-                        grid-template-areas:
-                            "text image"
-                            "text image";
-                        column-gap: 30px;
-
-                        & .jd_sections_projetc_prevew {
-                            grid-area: image;
-                            justify-content: start;
-                        }
-
-                        & .jd_sections_texts {
-                            grid-area: text;
+@media (min-width: 1200px) {
+    .jd_projects {
+        & .jd_main {
+            & .jd_sections {
+                & .jd_sections_itens {
+                    & .jd_sections_projetc_prevew {
+                        & .jd_sections_projetc_image {
+                            width: 580px;
+                            height: 326px;
                         }
                     }
                 }
@@ -230,24 +188,10 @@
 @media (min-width: 1400px) {
     .jd_projects {
         & .jd_main {
-            & .jd_sections {
-                align-items: center;
+            align-items: center;
 
-                & .jd_section_skillhub {
-                    width: 1400px;
-                }
-                
-                & .jd_section_portfolio_dio {
-                    width: 1400px;
-                }
-                
-                & .jd_section_js_calculator {
-                    width: 1400px;
-                }
-                
-                & .jd_section_java_calculator {
-                    width: 1400px;
-                }
+            & .jd_sections {
+                width: 1400px;
             }
         }
     }

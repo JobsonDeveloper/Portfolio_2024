@@ -94,7 +94,7 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li className="jd_navigation_desktop_links_list_item">
-                                <Link to="https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link" className='jd_navigation_desktop_links_item_link'>
+                                <Link to="https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=sharing" className='jd_navigation_desktop_links_item_link'>
                                     Currículo
                                 </Link>
                             </li>
@@ -134,7 +134,7 @@ export const Header = () => {
                     </li>
                     <li className="jd_options_item">
                         <JDLink
-                            to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link'
+                            to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=sharing'
                             className='jd_options_links'
                             target='_blank'
                         >

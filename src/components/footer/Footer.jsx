@@ -31,7 +31,7 @@ export const Footer = () => {
                         >Enviar mensagem</Link>
                     </li>
                     <li className="jd_footer_item jd_footer_item_element">
-                        <Link to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=drive_link'
+                        <Link to='https://docs.google.com/document/d/1vkr9zDTHYl8V5HzuTLBgbo-SwPufee5JW4DnXK2BLdk/edit?usp=sharing'
                             className='jd_footer_item_element_text'
                         >Acessar currículo</Link>
                     </li>

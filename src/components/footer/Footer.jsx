@@ -123,7 +123,7 @@ export const Footer = () => {
             </section>
 
             <article className="jd_footer_completion">
-                <p className="jd_footer_completion_text">jobsondeveloper.site | &#169; - {year} - Todos os direitos reservados</p>
+                <p className="jd_footer_completion_text">jobsondeveloper.vercel | &#169; - {year} - Todos os direitos reservados</p>
             </article>
         </footer>
     )

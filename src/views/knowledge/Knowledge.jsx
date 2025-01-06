@@ -13,11 +13,16 @@ import backgroundHardSkills from '../../assets/images/backgroundHardSkills.webp'
 import { CertificatesCard } from "../../components/certificatesCard/CertificatesCard";
 
 // Certificates
-import DioReactAndTypeScript from '../../assets/certificates/DIO-Paginas-com-React-e-TypeScript.webp';
-import DioJavaScriptDebuggingError from '../../assets/certificates/DIO-Debugging-e-Error-Handling-JavaScript.webp';
-import DioJavaScriptFunctions from '../../assets/certificates/DIO-Dominando-Funcoes-JavaScript.webp';
-import DioIntroductFomGitAndGitHub from '../../assets/certificates/DIO-Introducao-ao-Git-e-GitHub.webp';
-import DioOrientationFromObject from '../../assets/certificates/DIO-Orientacao-a-Objetos-com-JavaScript.webp';
+// import DioReactAndTypeScript from '../../assets/certificates/DIO-Paginas-com-React-e-TypeScript.webp';
+// import DioJavaScriptDebuggingError from '../../assets/certificates/DIO-Debugging-e-Error-Handling-JavaScript.webp';
+// import DioJavaScriptFunctions from '../../assets/certificates/DIO-Dominando-Funcoes-JavaScript.webp';
+// import DioIntroductFomGitAndGitHub from '../../assets/certificates/DIO-Introducao-ao-Git-e-GitHub.webp';
+// import DioOrientationFromObject from '../../assets/certificates/DIO-Orientacao-a-Objetos-com-JavaScript.webp';
+import DioTQIFillStack from '../../assets/certificates/DIO-TQI-FullStack-Java.png';
+import DioBootcampJava from '../../assets/certificates/DIO-Bootcamp-Java.png';
+import DioBootcampSpringFramework from '../../assets/certificates/DIO-Spring-Framework.png';
+import DioBootcampReactJs from '../../assets/certificates/DIO-Bootcamp-ReactJs.png';
+import DioBootcampSQL from '../../assets/certificates/DIO-Bootcamp-SQL.png';
 import UBUnibraLogicFromProgramming from '../../assets/certificates/UNIBRA-Intencivo-de-Logica-de-Programacao-Java.webp';
 import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-com-Programacao-Orientada-a-Objetos.webp';
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
@@ -94,31 +99,31 @@ export const Knowledge = () => {
                         <article className="jd_main_certificates" data-aos="fade-left">
                             {certificatePage === 1 &&
                                 <CertificatesCard
-                                    certificateUrl={DioReactAndTypeScript}
+                                    certificateUrl={DioTQIFillStack}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 2 &&
                                 <CertificatesCard
-                                    certificateUrl={DioJavaScriptDebuggingError}
+                                    certificateUrl={DioBootcampJava}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 3 &&
                                 <CertificatesCard
-                                    certificateUrl={DioJavaScriptFunctions}
+                                    certificateUrl={DioBootcampSpringFramework}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 4 &&
                                 <CertificatesCard
-                                    certificateUrl={DioIntroductFomGitAndGitHub}
+                                    certificateUrl={DioBootcampReactJs}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 5 &&
                                 <CertificatesCard
-                                    certificateUrl={DioOrientationFromObject}
+                                    certificateUrl={DioBootcampSQL}
                                     showCertificate={showCertificate}
                                 />
                             }

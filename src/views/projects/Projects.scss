@@ -80,7 +80,7 @@
                         height: 0;
                         border: 1px solid transparent;
                         position: absolute;
-                        animation: animationCircle 5s linear;
+                        // animation: animationCircle 5s linear;
                         transition: 2s;
                         border-radius: 5px;
                     }
@@ -93,15 +93,15 @@
                         &::after {
                             width: 90%;
                             height: 90%;
-                            animation: 15s animationProjectImageAfter linear infinite;
-                            transform: rotate(-180deg);
+                            // animation: 15s animationProjectImageAfter linear infinite;
+                            // transform: rotate(-180deg);
                         }
                         
                         &::before {
                             width: 85%;
                             height: 85%;
-                            animation: 15s animationProjectImageBefore linear infinite;
-                            transform: rotate(180deg);
+                            // animation: 15s animationProjectImageBefore linear infinite;
+                            // transform: rotate(180deg);
                         }
                     }
 

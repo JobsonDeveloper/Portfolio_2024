@@ -28,13 +28,13 @@ import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-co
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
-import { SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";
+import { SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
 
 import { Tilt } from 'react-tilt'
 import { RiJavascriptFill } from "react-icons/ri";
-import { FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
+import { FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 import { TbBrandNpm } from "react-icons/tb";
@@ -196,13 +196,18 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
-                                    <li className="jd_hard_skills_item" title="React">
-                                        <FaReact className="jd_hard_skills_item_icon" />
+                                    <li className="jd_hard_skills_item" title="jQuery">
+                                        <SiJquery className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Ionic">
                                         <SiIonic className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="React">
+                                        <FaReact className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
@@ -213,6 +218,11 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Bootstrap">
                                         <FaBootstrap className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Gulp">
+                                        <FaGulp className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>

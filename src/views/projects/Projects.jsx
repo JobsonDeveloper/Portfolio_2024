@@ -8,10 +8,13 @@ import Aos from 'aos';
 
 // Project pictures
 import imageSkillhub from '../../assets/projects/skillhub.webp';
+import imageCartasUchiha from '../../assets/projects/cartasUchiha.webp';
+import imageSaborDoAmor from '../../assets/projects/saborDoAmor.webp';
+import imageBrasilDiverso from '../../assets/projects/BrasilDiverso.webp';
+
 import imagePortfolioDio from '../../assets/projects/portfolioDio.webp';
 import imageJavaCalculator from '../../assets/projects/calculadoraJava.webp';
 import imageJsCalculator from '../../assets/projects/calculadoraJavaScript.webp';
-import imageCartasUchiha from '../../assets/projects/cartasUchiha.webp';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -128,13 +131,13 @@ export const Projects = () => {
                     {/* Portfolio Dio */}
                     <li className="jd_sections_itens jd_section_portfolio_dio">
                         <article className="jd_sections_titles_links" data-aos="fade-right">
-                            <h2 className="jd_item_title">Portfólio</h2>
-                            <p className="jd_item_subtitle">Desafio de portfólio da DIO</p>
+                            <h2 className="jd_item_title">Sabor do Amor</h2>
+                            <p className="jd_item_subtitle">O restaurante dos sonhos</p>
 
                             <ul className="jd_sections_projetc_redirects">
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://www.linkedin.com/posts/jobson-de-oliveira-coutinho-5882b9251_ol%C3%A1-pessoal-passando-somente-para-mostrar-activity-7263348584517959680-gdZU?utm_source=share&utm_medium=member_desktop"
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira-coutinho-5882b9251_hello-world-quero-compartilhar-com-voc%C3%AAs-activity-7286021125237579776-zLBP?utm_source=share&utm_medium=member_desktop"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <LinkedInIcon className="jd_project_icon" />
@@ -142,7 +145,7 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://github.com/JobsonDeveloper/Desafio-de-portf-lio-DIO.me"
+                                        href="https://github.com/JobsonDeveloper/Sabor_do_Amor"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <GitHubIcon className="jd_project_icon" />
@@ -150,7 +153,7 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://www.youtube.com/watch?v=f82jGwaWOBs"
+                                        href="https://youtu.be/0LRBMRR0xhA?si=Fl6HqKmrZwHI5DhQ"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <YouTubeIcon className="jd_project_icon" />
@@ -158,7 +161,7 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://projeto-de-portfolio.netlify.app/"
+                                        href="https://sabor-do-amor.vercel.app/"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <LanguageIcon className="jd_project_icon" />
@@ -168,20 +171,20 @@ export const Projects = () => {
                         </article>
 
                         <article className="jd_sections_projetc_prevew" data-aos="fade-right">
-                            <img src={imagePortfolioDio} alt="Foto do projeto de portfólio da dio" className="jd_sections_projetc_image" />
+                            <img src={imageSaborDoAmor} alt="Foto do projeto Sabor do Amor" className="jd_sections_projetc_image" />
                         </article >
                     </li>
 
                     {/* Java Calculator */}
                     <li className="jd_sections_itens jd_section_java_calculator jd_card_right">
                         <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
-                            <h2 className="jd_item_title">Calculadora Java</h2>
-                            <p className="jd_item_subtitle">Aprimorando os conhecimento em Java</p>
+                            <h2 className="jd_item_title">Brasil Diverso</h2>
+                            <p className="jd_item_subtitle">Porque a diversidade nos faz bem</p>
 
                             <ul className="jd_sections_projetc_redirects">
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://www.linkedin.com/posts/jobson-de-oliveira-coutinho-5882b9251_hello-world-venho-compartilhar-com-voc%C3%AAs-activity-7104208017851625472-9R1S?utm_source=share&utm_medium=member_desktop"
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira-coutinho-5882b9251_hello-world-quero-compartilhar-com-voc%C3%AAs-activity-7286021125237579776-zLBP?utm_source=share&utm_medium=member_desktop"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <LinkedInIcon className="jd_project_icon" />
@@ -189,7 +192,7 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://github.com/JobsonDeveloper/JavaCalculator"
+                                        href="https://github.com/JobsonDeveloper/Brasil_Diverso"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <GitHubIcon className="jd_project_icon" />
@@ -197,17 +200,25 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://youtube.com/shorts/pf5jUXnfNKk?feature=share"
+                                        href="https://youtu.be/0LRBMRR0xhA?si=Fl6HqKmrZwHI5DhQ"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <YouTubeIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://brasil-diverso.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
                                     </a>
                                 </li>
                             </ul>
                         </article>
 
                         <article className="jd_sections_projetc_prevew" data-aos="fade-left">
-                            <img src={imageJavaCalculator} alt="Foto do projeto Skillhub" className="jd_sections_projetc_image" />
+                            <img src={imageBrasilDiverso} alt="Foto do projeto Brasil Diverso" className="jd_sections_projetc_image" />
                         </article>
                     </li>
                 </ul>

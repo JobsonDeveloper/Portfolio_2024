@@ -11,6 +11,8 @@ import imageSkillhub from '../../assets/projects/skillhub.webp';
 import imageCartasUchiha from '../../assets/projects/cartasUchiha.webp';
 import imageSaborDoAmor from '../../assets/projects/saborDoAmor.webp';
 import imageBrasilDiverso from '../../assets/projects/BrasilDiverso.webp';
+import imageCloneDisneyPlus from '../../assets/projects/cloneDisneyPlus.webp';
+import imageDisneyPlusVingadores from '../../assets/projects/vingadoresDisneyPlus.webp';
 
 import imagePortfolioDio from '../../assets/projects/portfolioDio.webp';
 import imageJavaCalculator from '../../assets/projects/calculadoraJava.webp';
@@ -40,6 +42,102 @@ export const Projects = () => {
                 <h2 className="jd_page_name" >Projetos</h2>
 
                 <ul className="jd_sections">
+                    {/* Clone Disney+ */}
+                    <li className="jd_sections_itens jd_section_clone_disney">
+
+                        <article className="jd_sections_titles_links" data-aos="fade-right">
+                            <h2 className="jd_item_title">Clone Disney+</h2>
+                            <p className="jd_item_subtitle">Criado durante os estudos na EBAC</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_bota-tarde-para-todos-compartilho-hoje-activity-7288628088551198720-Y-3m?utm_source=share&utm_medium=member_desktop"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/Clone_Disney_Plus"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://youtu.be/xWgneA1JHlA?si=MK7Z7kZuKIpD0KGn"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <YouTubeIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://clone-disney-plus-gold.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-right">
+                            <img src={imageCloneDisneyPlus} alt="Foto do projeto Clone da Disney Plus" className="jd_sections_projetc_image" />
+                        </article>
+
+                    </li>
+
+                    {/* Jogo de cartas do Bootcap  Full-Stack Java na DIO */}
+                    <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
+                        <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
+                            <h2 className="jd_item_title">Clone da página de filme da Disney+</h2>
+                            <p className="jd_item_subtitle">Um dos desafios de projeto da EBAC</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_boa-noite-para-todos-quero-compartilhar-activity-7289779464257884160-313I?utm_source=share&utm_medium=member_desktop"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/Vingadores_DisneyPlus"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://youtu.be/u7UJwlRrqyI?si=g9M75IyqwwAnsqpj"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <YouTubeIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://vingadores-disney-plus.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-left">
+                            <img src={imageDisneyPlusVingadores} alt="Foto do projeto de jogo de cartas proposto pela dio" className="jd_sections_projetc_image" />
+                        </article>
+                    </li>
+
                     {/* Skillhub */}
                     <li className="jd_sections_itens jd_section_skillhub">
 
@@ -82,7 +180,7 @@ export const Projects = () => {
                     </li>
 
                     {/* Jogo de cartas do Bootcap  Full-Stack Java na DIO */}
-                    <li className="jd_sections_itens jd_section_portfolio_dio jd_card_right">
+                    <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
                         <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
                             <h2 className="jd_item_title">Jogo de Cartas</h2>
                             <p className="jd_item_subtitle">Um dos desafios do Bootcamp na DIO</p>

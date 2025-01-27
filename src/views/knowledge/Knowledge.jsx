@@ -31,7 +31,7 @@ import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Proj
 import { SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
-
+import { LiaGrunt } from "react-icons/lia";
 import { Tilt } from 'react-tilt'
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
@@ -223,6 +223,11 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Gulp">
                                         <FaGulp className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Grunt">
+                                        <LiaGrunt className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>

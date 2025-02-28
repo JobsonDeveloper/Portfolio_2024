@@ -13,11 +13,6 @@ import backgroundHardSkills from '../../assets/images/backgroundHardSkills.webp'
 import { CertificatesCard } from "../../components/certificatesCard/CertificatesCard";
 
 // Certificates
-// import DioReactAndTypeScript from '../../assets/certificates/DIO-Paginas-com-React-e-TypeScript.webp';
-// import DioJavaScriptDebuggingError from '../../assets/certificates/DIO-Debugging-e-Error-Handling-JavaScript.webp';
-// import DioJavaScriptFunctions from '../../assets/certificates/DIO-Dominando-Funcoes-JavaScript.webp';
-// import DioIntroductFomGitAndGitHub from '../../assets/certificates/DIO-Introducao-ao-Git-e-GitHub.webp';
-// import DioOrientationFromObject from '../../assets/certificates/DIO-Orientacao-a-Objetos-com-JavaScript.webp';
 import DioTQIFillStack from '../../assets/certificates/DIO-TQI-FullStack-Java.png';
 import DioBootcampJava from '../../assets/certificates/DIO-Bootcamp-Java.png';
 import DioBootcampSpringFramework from '../../assets/certificates/DIO-Spring-Framework.png';
@@ -28,16 +23,16 @@ import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-co
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
-import { SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpringboot } from "react-icons/si";
+import { SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
 import { LiaGrunt } from "react-icons/lia";
 import { Tilt } from 'react-tilt'
 import { RiJavascriptFill } from "react-icons/ri";
-import { FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
+import { FaLess, FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
-import { TbBrandNpm } from "react-icons/tb";
+import { TbBrandNpm, TbBrandRedux  } from "react-icons/tb";
 const defaultOptions = {
     reverse: false,  // reverse the tilt direction
     max: 35,     // max tilt rotation (degrees)
@@ -185,6 +180,11 @@ export const Knowledge = () => {
                                         <SiSass className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
+                                <Tilt options={defaultOptions}>
+                                    <li className="jd_hard_skills_item" title="Less">
+                                        <FaLess className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="JavaScript">
                                         <RiJavascriptFill className="jd_hard_skills_item_icon" />
@@ -211,6 +211,21 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Redux">
+                                        <TbBrandRedux className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="React Router">
+                                        <SiReactrouter className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Styled-Components">
+                                        <SiStyledcomponents  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Material UI">
                                         <SiMui className="jd_hard_skills_item_icon" />
                                     </li>
@@ -228,6 +243,11 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Grunt">
                                         <LiaGrunt className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Babel">
+                                        <SiBabel className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>
@@ -261,8 +281,8 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
-                                    <li className="jd_hard_skills_item" title="Spring Boot">
-                                        <SiSpringboot className="jd_hard_skills_item_icon" />
+                                    <li className="jd_hard_skills_item" title="Spring Framework">
+                                        <SiSpring  className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>
@@ -271,10 +291,25 @@ export const Knowledge = () => {
                         {/* Hard-Skills Oder Skills */}
                         <article className="jd_hard_skills_container jd_oder_skills" data-aos="fade-right">
                             <article className="jd_hard_skills_substitles">
-                                <h6 className="jd_hardk_skills_subtitles_title">Tecnologias utilizadas</h6>
+                                <h6 className="jd_hardk_skills_subtitles_title">Outras Tecnologias</h6>
                             </article>
 
                             <ul className="jd_hard_skills_container_list">
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="ESLint">
+                                        <SiEslint className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Prettier">
+                                        <SiPrettier className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="EditorConfig">
+                                        <SiEditorconfig  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Trello">
                                         <FaTrello className="jd_hard_skills_item_icon" />

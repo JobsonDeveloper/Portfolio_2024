@@ -13,6 +13,10 @@ import imageSaborDoAmor from '../../assets/projects/saborDoAmor.webp';
 import imageBrasilDiverso from '../../assets/projects/BrasilDiverso.webp';
 import imageCloneDisneyPlus from '../../assets/projects/cloneDisneyPlus.webp';
 import imageDisneyPlusVingadores from '../../assets/projects/vingadoresDisneyPlus.webp';
+import imageListaDeTarefas from '../../assets/projects/listaDeTarefas.webp';
+import imageToDoList from '../../assets/projects/toDoList.webp';
+import imageJbCar from '../../assets/projects/JBcar.webp';
+import imageEbacTechTalks from '../../assets/projects/ebacTechTalks.webp';
 
 import imagePortfolioDio from '../../assets/projects/portfolioDio.webp';
 import imageJavaCalculator from '../../assets/projects/calculadoraJava.webp';
@@ -226,6 +230,146 @@ export const Projects = () => {
                         </article>
                     </li>
 
+                    {/* Lista de Tarefas */}
+                    <li className="jd_sections_itens jd_section_lista_de_tarefas">
+                        <article className="jd_sections_titles_links" data-aos="fade-right">
+                            <h2 className="jd_item_title">Lista de Tarefas</h2>
+                            <p className="jd_item_subtitle">Facilitando o seu dia-a-dia</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_hello-world-compartilho-hoje-com-voc%C3%AAs-activity-7301028422686797824-hP1X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/Lista-de-tarefas"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://lista-de-tarefas-r6l2.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-right">
+                            <img src={imageListaDeTarefas} alt="Foto do projeto Lista de Tarefas" className="jd_sections_projetc_image" />
+                        </article >
+                    </li>
+
+                    {/* To-Do List */}
+                    <li className="jd_sections_itens jd_section_toDo_list jd_card_right">
+                        <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
+                            <h2 className="jd_item_title">To-Do List</h2>
+                            <p className="jd_item_subtitle">Sempre te ajudando a lembrar</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_aperfei%C3%A7oando-a-atividade-que-foi-constru%C3%ADda-activity-7293275017822236672-BXTL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/ToDoList_Vue"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://vue-to-do-list-mu.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-left">
+                            <img src={imageToDoList} alt="Foto do projeto To-Do List" className="jd_sections_projetc_image" />
+                        </article>
+                    </li>
+
+                    {/* Lista de Tarefas */}
+                    <li className="jd_sections_itens jd_section_ebac_tech_talks">
+                        <article className="jd_sections_titles_links" data-aos="fade-right">
+                            <h2 className="jd_item_title">EBAC Tech Talks</h2>
+                            <p className="jd_item_subtitle">Projeto de site de divulgação de eventos</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/EBAC_Tech_Talks"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://ebac-tech-talks-self-mu.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-right">
+                            <img src={imageEbacTechTalks} alt="Foto do projeto EBAC Tech Talks" className="jd_sections_projetc_image" />
+                        </article >
+                    </li>
+
+                    {/* JB Car */}
+                    <li className="jd_sections_itens jd_section_jb_car jd_card_right">
+                        <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
+                            <h2 className="jd_item_title">JB - Car</h2>
+                            <p className="jd_item_subtitle">A melhor escolha está aqui</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/JB-CAR"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://jb-car.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-left">
+                            <img src={imageJbCar} alt="Foto do projeto JB Car" className="jd_sections_projetc_image" />
+                        </article>
+                    </li>
+
                     {/* Portfolio Dio */}
                     <li className="jd_sections_itens jd_section_portfolio_dio">
                         <article className="jd_sections_titles_links" data-aos="fade-right">
@@ -273,8 +417,8 @@ export const Projects = () => {
                         </article >
                     </li>
 
-                    {/* Java Calculator */}
-                    <li className="jd_sections_itens jd_section_java_calculator jd_card_right">
+                    {/* Brasil diverso */}
+                    <li className="jd_sections_itens jd_section_brasil_diverso jd_card_right">
                         <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
                             <h2 className="jd_item_title">Brasil Diverso</h2>
                             <p className="jd_item_subtitle">Porque a diversidade nos faz bem</p>

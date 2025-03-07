@@ -23,13 +23,13 @@ import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-co
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
-import { SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
-import { BiLogoTypescript } from "react-icons/bi";
+import { SiCypress , SiJest, SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import { LiaGrunt } from "react-icons/lia";
 import { Tilt } from 'react-tilt'
 import { RiJavascriptFill } from "react-icons/ri";
-import { FaLess, FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
+import { FaVuejs, FaHtml5, FaCss3Alt, FaLess, FaGulp, FaBootstrap, FaCpanel, FaFigma, FaGitAlt, FaGithub, FaJava, FaLaravel, FaPhp, FaReact, FaTrello } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 import { TbBrandNpm, TbBrandRedux  } from "react-icons/tb";
@@ -176,6 +176,16 @@ export const Knowledge = () => {
 
                             <ul className="jd_hard_skills_container_list">
                                 <Tilt options={defaultOptions}>
+                                    <li className="jd_hard_skills_item" title="HTML">
+                                        <FaHtml5 className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions}>
+                                    <li className="jd_hard_skills_item" title="CSS">
+                                        <FaCss3Alt className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions}>
                                     <li className="jd_hard_skills_item" title="Sass">
                                         <SiSass className="jd_hard_skills_item_icon" />
                                     </li>
@@ -221,6 +231,16 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Jest">
+                                        <SiJest  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Cypress">
+                                        <SiCypress  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Styled-Components">
                                         <SiStyledcomponents  className="jd_hard_skills_item_icon" />
                                     </li>
@@ -236,6 +256,11 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Vue.js">
+                                        <FaVuejs className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Gulp">
                                         <FaGulp className="jd_hard_skills_item_icon" />
                                     </li>
@@ -248,6 +273,16 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="Babel">
                                         <SiBabel className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="ESLint">
+                                        <SiEslint className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Prettier">
+                                        <SiPrettier className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>
@@ -285,6 +320,11 @@ export const Knowledge = () => {
                                         <SiSpring  className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="PostgreSQL">
+                                        <BiLogoPostgresql  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
                             </ul>
                         </article>
 
@@ -295,16 +335,6 @@ export const Knowledge = () => {
                             </article>
 
                             <ul className="jd_hard_skills_container_list">
-                                <Tilt options={defaultOptions} >
-                                    <li className="jd_hard_skills_item" title="ESLint">
-                                        <SiEslint className="jd_hard_skills_item_icon" />
-                                    </li>
-                                </Tilt>
-                                <Tilt options={defaultOptions} >
-                                    <li className="jd_hard_skills_item" title="Prettier">
-                                        <SiPrettier className="jd_hard_skills_item_icon" />
-                                    </li>
-                                </Tilt>
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="EditorConfig">
                                         <SiEditorconfig  className="jd_hard_skills_item_icon" />

@@ -5,7 +5,7 @@
 
 ![image (19)](https://github.com/user-attachments/assets/05e18b13-eaee-4336-a14f-fad7e00db00c)
 ![image (20)](https://github.com/user-attachments/assets/c933e652-34db-47b1-b8a6-e40a9912b91f)
-![image (18)](https://github.com/user-attachments/assets/ce46f1c9-6c95-435e-97e7-4e212934d81c)
+![image](https://github.com/user-attachments/assets/dd0cc2e8-bc4d-43a2-ac9d-8f809395e573)
 ![image (17)](https://github.com/user-attachments/assets/b44a564d-7724-4292-a8f7-de7aa96658bc)
 
 ## Qualificações

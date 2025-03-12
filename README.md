@@ -1,5 +1,5 @@
 ### Meu Portfólio como Desenvolvedor Full-Stack
-<a href="https://jobsondeveloper.vercel.app/" target="_blank">Veja meu Portfólio</a>
+[Veja meu Portfólio](https://jobsondeveloper.vercel.app/)
 
 ### Ferramentas utiliizadas:
 [![My Skills](https://skillicons.dev/icons?i=html,sass,js,react,materialui,styledcomponents,figma,git,vercel)](https://skillicons.dev)

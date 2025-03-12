@@ -1,5 +1,10 @@
-### Um dos projetos que mais me deu orgulho e satisfação
 ### Meu Portfólio como Desenvolvedor Full-Stack
+
+### Ferramentas utiliizadas:
+[![My Skills](https://skillicons.dev/icons?i=html,sass,js,react,materialui,styledcomponents,figma,git,vercel)](https://skillicons.dev)
+
+### Lista completa:
+HTML | Sass | JavaScript | React | Material UI | React Hooks | React Router | React Icons | Styled-components | AOS - Animate on scroll library | Figma | Git | Vercel
 
 ## Apresentação
 

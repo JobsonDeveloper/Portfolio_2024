@@ -10,17 +10,14 @@ import Aos from 'aos';
 import imageSkillhub from '../../assets/projects/skillhub.webp';
 import imageCartasUchiha from '../../assets/projects/cartasUchiha.webp';
 import imageSaborDoAmor from '../../assets/projects/saborDoAmor.webp';
-import imageBrasilDiverso from '../../assets/projects/BrasilDiverso.webp';
 import imageCloneDisneyPlus from '../../assets/projects/cloneDisneyPlus.webp';
 import imageDisneyPlusVingadores from '../../assets/projects/vingadoresDisneyPlus.webp';
 import imageListaDeTarefas from '../../assets/projects/listaDeTarefas.webp';
 import imageToDoList from '../../assets/projects/toDoList.webp';
 import imageJbCar from '../../assets/projects/JBcar.webp';
-import imageEbacTechTalks from '../../assets/projects/ebacTechTalks.webp';
+import imageEPLAY from '../../assets/projects/eplay.png';
+import imageEFood from '../../assets/projects/efood.png';
 
-import imagePortfolioDio from '../../assets/projects/portfolioDio.webp';
-import imageJavaCalculator from '../../assets/projects/calculadoraJava.webp';
-import imageJsCalculator from '../../assets/projects/calculadoraJavaScript.webp';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -46,6 +43,84 @@ export const Projects = () => {
                 <h2 className="jd_page_name" >Projetos</h2>
 
                 <ul className="jd_sections">
+                    {/* EPLAY */}
+                    <li className="jd_sections_itens ">
+                        <article className="jd_sections_titles_links" data-aos="fade-right">
+                            <h2 className="jd_item_title">EPLAY</h2>
+                            <p className="jd_item_subtitle">O site certo para gamers</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_hello-world-gra%C3%A7as-a-deus-hoje-estou-activity-7309405942440189952-NIuZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/eplay"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://eplay-ochre.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-right">
+                            <img src={imageEPLAY} alt="Foto do projeto EPLAY" className="jd_sections_projetc_image" />
+                        </article >
+                    </li>
+
+                    {/* eFood */}
+                    <li className="jd_sections_itens jd_section_jb_car jd_card_right">
+                        <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
+                            <h2 className="jd_item_title">eFood</h2>
+                            <p className="jd_item_subtitle">Sua melhor experiência gastronônica</p>
+
+                            <ul className="jd_sections_projetc_redirects">
+                            <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://www.linkedin.com/posts/jobson-de-oliveira_ol%C3%A1-pessoal-hoje-foi-um-dia-de-muita-activity-7309400224714661888-VWdM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LinkedInIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://github.com/JobsonDeveloper/eFood"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <GitHubIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                                <li className="jd_projetc_redirect_item">
+                                    <a
+                                        href="https://efood-three-omega.vercel.app/"
+                                        className="jd_sections_projetc_links"
+                                        target="_blank">
+                                        <LanguageIcon className="jd_project_icon" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="jd_sections_projetc_prevew" data-aos="fade-left">
+                            <img src={imageEFood} alt="Foto do projeto eFood" className="jd_sections_projetc_image" />
+                        </article>
+                    </li>
+
                     {/* Clone Disney+ */}
                     <li className="jd_sections_itens jd_section_clone_disney">
 
@@ -308,70 +383,8 @@ export const Projects = () => {
                         </article>
                     </li>
 
-                    {/* Lista de Tarefas */}
-                    <li className="jd_sections_itens jd_section_ebac_tech_talks">
-                        <article className="jd_sections_titles_links" data-aos="fade-right">
-                            <h2 className="jd_item_title">EBAC Tech Talks</h2>
-                            <p className="jd_item_subtitle">Projeto de site de divulgação de eventos</p>
-
-                            <ul className="jd_sections_projetc_redirects">
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://github.com/JobsonDeveloper/EBAC_Tech_Talks"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <GitHubIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://ebac-tech-talks-self-mu.vercel.app/"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <LanguageIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </article>
-
-                        <article className="jd_sections_projetc_prevew" data-aos="fade-right">
-                            <img src={imageEbacTechTalks} alt="Foto do projeto EBAC Tech Talks" className="jd_sections_projetc_image" />
-                        </article >
-                    </li>
-
-                    {/* JB Car */}
-                    <li className="jd_sections_itens jd_section_jb_car jd_card_right">
-                        <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
-                            <h2 className="jd_item_title">JB - Car</h2>
-                            <p className="jd_item_subtitle">A melhor escolha está aqui</p>
-
-                            <ul className="jd_sections_projetc_redirects">
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://github.com/JobsonDeveloper/JB-CAR"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <GitHubIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://jb-car.vercel.app/"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <LanguageIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </article>
-
-                        <article className="jd_sections_projetc_prevew" data-aos="fade-left">
-                            <img src={imageJbCar} alt="Foto do projeto JB Car" className="jd_sections_projetc_image" />
-                        </article>
-                    </li>
-
-                    {/* Portfolio Dio */}
-                    <li className="jd_sections_itens jd_section_portfolio_dio">
+                    {/* Sabor do amor */}
+                    <li className="jd_sections_itens ">
                         <article className="jd_sections_titles_links" data-aos="fade-right">
                             <h2 className="jd_item_title">Sabor do Amor</h2>
                             <p className="jd_item_subtitle">O restaurante dos sonhos</p>
@@ -417,24 +430,16 @@ export const Projects = () => {
                         </article >
                     </li>
 
-                    {/* Brasil diverso */}
-                    <li className="jd_sections_itens jd_section_brasil_diverso jd_card_right">
+                    {/* JB Car */}
+                    <li className="jd_sections_itens jd_section_jb_car jd_card_right">
                         <article className="jd_sections_titles_links jd_title_right" data-aos="fade-left">
-                            <h2 className="jd_item_title">Brasil Diverso</h2>
-                            <p className="jd_item_subtitle">Porque a diversidade nos faz bem</p>
+                            <h2 className="jd_item_title">JB - Car</h2>
+                            <p className="jd_item_subtitle">A melhor escolha está aqui</p>
 
                             <ul className="jd_sections_projetc_redirects">
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://www.linkedin.com/posts/jobson-de-oliveira-coutinho-5882b9251_hello-world-quero-compartilhar-com-voc%C3%AAs-activity-7286021125237579776-zLBP?utm_source=share&utm_medium=member_desktop"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <LinkedInIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://github.com/JobsonDeveloper/Brasil_Diverso"
+                                        href="https://github.com/JobsonDeveloper/JB-CAR"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <GitHubIcon className="jd_project_icon" />
@@ -442,15 +447,7 @@ export const Projects = () => {
                                 </li>
                                 <li className="jd_projetc_redirect_item">
                                     <a
-                                        href="https://youtu.be/0LRBMRR0xhA?si=Fl6HqKmrZwHI5DhQ"
-                                        className="jd_sections_projetc_links"
-                                        target="_blank">
-                                        <YouTubeIcon className="jd_project_icon" />
-                                    </a>
-                                </li>
-                                <li className="jd_projetc_redirect_item">
-                                    <a
-                                        href="https://brasil-diverso.vercel.app/"
+                                        href="https://jb-car.vercel.app/"
                                         className="jd_sections_projetc_links"
                                         target="_blank">
                                         <LanguageIcon className="jd_project_icon" />
@@ -460,7 +457,7 @@ export const Projects = () => {
                         </article>
 
                         <article className="jd_sections_projetc_prevew" data-aos="fade-left">
-                            <img src={imageBrasilDiverso} alt="Foto do projeto Brasil Diverso" className="jd_sections_projetc_image" />
+                            <img src={imageJbCar} alt="Foto do projeto JB Car" className="jd_sections_projetc_image" />
                         </article>
                     </li>
                 </ul>

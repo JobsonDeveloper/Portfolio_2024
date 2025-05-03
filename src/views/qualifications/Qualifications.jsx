@@ -161,6 +161,15 @@ export const Qualifications = () => {
                                 {/* Asistente de Sistemas / Desenvolvedor - UNIBRA */}
                                 {profissionPage === 1 &&
                                     <ProfissionCard
+                                        company='GAUSS TECHNOLOGY'
+                                        function='Desenvolvedor Full-Stack'
+                                        period='05/2025 - Momento atual'
+                                        showProfission={showProfission}
+                                        position='PJ'
+                                    />
+                                }
+                                {profissionPage === 2 &&
+                                    <ProfissionCard
                                         company='UNIBRA - Centro Universitário Brasileiro'
                                         function='Asistente de Sistemas / Desenvolvedor'
                                         period='01/2024 - 07/2024'
@@ -169,18 +178,18 @@ export const Qualifications = () => {
                                     />
                                 }
                                 {/* Auxiliar de Escritório - CidexFibra */}
-                                {profissionPage === 2 &&
+                                {profissionPage === 3 &&
                                     <ProfissionCard
                                         company='Cidex Informática e Telecom'
                                         function='Auxiliar de Escritório'
-                                        period='01/2021 - Momento atual'
+                                        period='01/2021 - 01/2024'
                                         showProfission={showProfission}
                                         position='CLT'
                                     />
                                 }
                                 <article className="jd_functions_pagination">
                                     <Pagination
-                                        count={2}
+                                        count={3}
                                         page={profissionPage}
                                         onChange={changeProfissionPage}
                                         hidePrevButton

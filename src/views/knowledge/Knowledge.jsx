@@ -23,7 +23,7 @@ import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-co
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
-import { SiFormik, SiCypress , SiJest, SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
+import { SiJunit5, SiSqlite, SiFormik, SiCypress , SiJest, SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import { LiaGrunt } from "react-icons/lia";
@@ -328,6 +328,16 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="PostgreSQL">
                                         <BiLogoPostgresql  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="SQLite">
+                                        <SiSqlite  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="JUnit">
+                                        <SiJunit5  className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>

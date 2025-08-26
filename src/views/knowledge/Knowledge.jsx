@@ -13,7 +13,8 @@ import backgroundHardSkills from '../../assets/images/backgroundHardSkills.webp'
 import { CertificatesCard } from "../../components/certificatesCard/CertificatesCard";
 
 // Certificates
-import DioTQIFillStack from '../../assets/certificates/DIO-TQI-FullStack-Java.png';
+import EBACFullStackJava from '../../assets/certificates/EBAC-Full-Stack-Java.png';
+import DioTQIFullStack from '../../assets/certificates/DIO-TQI-FullStack-Java.png';
 import DioBootcampJava from '../../assets/certificates/DIO-Bootcamp-Java.png';
 import DioBootcampSpringFramework from '../../assets/certificates/DIO-Spring-Framework.png';
 import DioBootcampReactJs from '../../assets/certificates/DIO-Bootcamp-ReactJs.png';
@@ -23,7 +24,7 @@ import UBProjectOrientedObject from '../../assets/certificates/UNIBRA-Projeto-co
 import UBManagementProject from '../../assets/certificates/UNIBRA-Gestao-de-Projetos.webp';
 
 // Icons Reacgt
-import { SiJunit5, SiSqlite, SiFormik, SiCypress , SiJest, SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
+import { SiHibernate, SiApachemaven, SiApachetomcat, SiEclipseide, SiIntellijidea, SiMongodb, SiDocker, SiJunit5, SiSqlite, SiFormik, SiCypress , SiJest, SiBabel, SiEditorconfig, SiPrettier, SiEslint, SiStyledcomponents, SiReactrouter , SiJquery, SiAndroidstudio, SiGimp, SiIonic, SiMui, SiPostman, SiSass, SiSpring  } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import { LiaGrunt } from "react-icons/lia";
@@ -94,47 +95,53 @@ export const Knowledge = () => {
                         <article className="jd_main_certificates" data-aos="fade-left">
                             {certificatePage === 1 &&
                                 <CertificatesCard
-                                    certificateUrl={DioTQIFillStack}
+                                    certificateUrl={EBACFullStackJava}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 2 &&
                                 <CertificatesCard
-                                    certificateUrl={DioBootcampJava}
+                                    certificateUrl={DioTQIFullStack}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 3 &&
                                 <CertificatesCard
-                                    certificateUrl={DioBootcampSpringFramework}
+                                    certificateUrl={DioBootcampJava}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 4 &&
                                 <CertificatesCard
-                                    certificateUrl={DioBootcampReactJs}
+                                    certificateUrl={DioBootcampSpringFramework}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 5 &&
                                 <CertificatesCard
-                                    certificateUrl={DioBootcampSQL}
+                                    certificateUrl={DioBootcampReactJs}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 6 &&
                                 <CertificatesCard
-                                    certificateUrl={UBUnibraLogicFromProgramming}
+                                    certificateUrl={DioBootcampSQL}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 7 &&
                                 <CertificatesCard
-                                    certificateUrl={UBProjectOrientedObject}
+                                    certificateUrl={UBUnibraLogicFromProgramming}
                                     showCertificate={showCertificate}
                                 />
                             }
                             {certificatePage === 8 &&
+                                <CertificatesCard
+                                    certificateUrl={UBProjectOrientedObject}
+                                    showCertificate={showCertificate}
+                                />
+                            }
+                            {certificatePage === 9 &&
                                 <CertificatesCard
                                     certificateUrl={UBManagementProject}
                                     showCertificate={showCertificate}
@@ -143,7 +150,7 @@ export const Knowledge = () => {
 
                             <article className="jd_certificate_pagination">
                                 <Pagination
-                                    count={8}
+                                    count={9}
                                     page={certificatePage}
                                     onChange={changeCertificatePage}
                                     hidePrevButton
@@ -340,6 +347,26 @@ export const Knowledge = () => {
                                         <SiJunit5  className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Hibernate">
+                                        <SiHibernate  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Maven">
+                                        <SiApachemaven  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Tomcat">
+                                        <SiApachetomcat  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="MongoDB">
+                                        <SiMongodb  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
                             </ul>
                         </article>
 
@@ -398,6 +425,21 @@ export const Knowledge = () => {
                                 <Tilt options={defaultOptions} >
                                     <li className="jd_hard_skills_item" title="cPanel">
                                         <FaCpanel className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Eclipse IDE">
+                                        <SiEclipseide  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="IntelliJ IDEA">
+                                        <SiIntellijidea  className="jd_hard_skills_item_icon" />
+                                    </li>
+                                </Tilt>
+                                <Tilt options={defaultOptions} >
+                                    <li className="jd_hard_skills_item" title="Docker">
+                                        <SiDocker  className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>
                             </ul>

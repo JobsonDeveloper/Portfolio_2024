@@ -293,7 +293,7 @@ export const Knowledge = () => {
                                     </li>
                                 </Tilt>
                                 <Tilt options={defaultOptions} >
-                                    <li className="jd_hard_skills_item" title="Prettier">
+                                    <li className="jd_hard_skills_item" title="Formik">
                                         <SiFormik className="jd_hard_skills_item_icon" />
                                     </li>
                                 </Tilt>

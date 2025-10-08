@@ -17,7 +17,7 @@ import imageToDoList from "../../assets/projects/toDoList.webp";
 import imageJbCar from "../../assets/projects/JBcar.webp";
 import imageEPLAY from "../../assets/projects/eplay.png";
 import imageEFood from "../../assets/projects/efood.png";
-import imageEstoqueDeProdutosJava from "../../assets/projects/EstoqueDeProdutos.png";
+import imageLoggable from "../../assets/projects/Loggable.png";
 import imageClienteProdutoSpringBoot from "../../assets/projects/Spring-Boot-Client-Product-API.png";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -44,13 +44,57 @@ export const Projects = () => {
         <h2 className="jd_page_name">Projetos</h2>
 
         <ul className="jd_sections">
-          {/* Spring Boot - Cliente-Produto APIs */}
+          {/* Loggable */}
           <li className="jd_sections_itens ">
             <article className="jd_sections_titles_links" data-aos="fade-right">
+              <h2 className="jd_item_title">Loggable</h2>
+              <p className="jd_item_subtitle">
+                Autenticação de usuários com JWT
+              </p>
+
+              <ul className="jd_sections_projetc_redirects">
+                <li className="jd_projetc_redirect_item">
+                  <a
+                    href="https://www.linkedin.com/posts/jobson-de-oliveira_hello-wolrd-finalizando-mais-um-projeto-activity-7379904284634636289-OARq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                    className="jd_sections_projetc_links"
+                    target="_blank"
+                  >
+                    <LinkedInIcon className="jd_project_icon" />
+                  </a>
+                </li>
+                <li className="jd_projetc_redirect_item">
+                  <a
+                    href="https://github.com/JobsonDeveloper/Loggable-api"
+                    className="jd_sections_projetc_links"
+                    target="_blank"
+                  >
+                    <GitHubIcon className="jd_project_icon" />
+                  </a>
+                </li>
+              </ul>
+            </article>
+
+            <article
+              className="jd_sections_projetc_prevew"
+              data-aos="fade-right"
+            >
+              <img
+                src={imageLoggable}
+                alt="Documentação das rotas do Loggable com Swagger"
+                className="jd_sections_projetc_image"
+              />
+            </article>
+          </li>
+
+          {/* JAVA - Client-Product */}
+          <li className="jd_sections_itens jd_section_jb_car jd_card_right">
+            <article
+              className="jd_sections_titles_links jd_title_right"
+              data-aos="fade-left"
+            >
               <h2 className="jd_item_title">APIs - Cliente-Produto</h2>
               <p className="jd_item_subtitle">
-                APIs criadas em Microsserviços para manipulação dos dados de
-                clientes e produtos
+                Criação e documentação de Microsserviços
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -77,55 +121,10 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageClienteProdutoSpringBoot}
-                alt="Foto do projeto Estoque de Produtos"
-                className="jd_sections_projetc_image"
-              />
-            </article>
-          </li>
-
-          {/* JAVA - Estoque de produtos */}
-          <li className="jd_sections_itens jd_section_jb_car jd_card_right">
-            <article
-              className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
-            >
-              <h2 className="jd_item_title">Estoque de produtos</h2>
-              <p className="jd_item_subtitle">
-                Armazenando seus produtos em banco de dados
-              </p>
-
-              <ul className="jd_sections_projetc_redirects">
-                <li className="jd_projetc_redirect_item">
-                  <a
-                    href="https://www.linkedin.com/posts/jobson-de-oliveira_mais-um-desafio-conclu%C3%ADdo-mais-uma-experi%C3%AAncia-activity-7361573999732039680-Rn33?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
-                    className="jd_sections_projetc_links"
-                    target="_blank"
-                  >
-                    <LinkedInIcon className="jd_project_icon" />
-                  </a>
-                </li>
-                <li className="jd_projetc_redirect_item">
-                  <a
-                    href="https://github.com/JobsonDeveloper/Projeto_Vendas_JPA"
-                    className="jd_sections_projetc_links"
-                    target="_blank"
-                  >
-                    <GitHubIcon className="jd_project_icon" />
-                  </a>
-                </li>
-              </ul>
-            </article>
-
-            <article
-              className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
-            >
-              <img
-                src={imageEstoqueDeProdutosJava}
                 alt="Foto do projeto Estoque de Produtos"
                 className="jd_sections_projetc_image"
               />
@@ -136,7 +135,9 @@ export const Projects = () => {
           <li className="jd_sections_itens ">
             <article className="jd_sections_titles_links" data-aos="fade-right">
               <h2 className="jd_item_title">EPLAY</h2>
-              <p className="jd_item_subtitle">O site certo para gamers</p>
+              <p className="jd_item_subtitle">
+                Utilização do React com Redux e consumo de API
+              </p>
 
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">
@@ -189,7 +190,7 @@ export const Projects = () => {
             >
               <h2 className="jd_item_title">eFood</h2>
               <p className="jd_item_subtitle">
-                Sua melhor experiência gastronônica
+                Desafio de React com Redux e consumo de API
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -240,7 +241,7 @@ export const Projects = () => {
             <article className="jd_sections_titles_links" data-aos="fade-right">
               <h2 className="jd_item_title">Clone Disney+</h2>
               <p className="jd_item_subtitle">
-                Criado durante os estudos na EBAC
+                Landing page feita com HTML, Sass e JavaScript
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -295,17 +296,15 @@ export const Projects = () => {
             </article>
           </li>
 
-          {/* Jogo de cartas do Bootcap  Full-Stack Java na DIO */}
+          {/* Jogo de cartas */}
           <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
             <article
               className="jd_sections_titles_links jd_title_right"
               data-aos="fade-left"
             >
-              <h2 className="jd_item_title">
-                Clone da página de filme da Disney+
-              </h2>
+              <h2 className="jd_item_title">Página de filme da Disney+</h2>
               <p className="jd_item_subtitle">
-                Um dos desafios de projeto da EBAC
+                Landing page feita com HTML, Sass e JavaScript
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -365,7 +364,7 @@ export const Projects = () => {
             <article className="jd_sections_titles_links" data-aos="fade-right">
               <h2 className="jd_item_title">Skillhub</h2>
               <p className="jd_item_subtitle">
-                Conectando clientes e freelancers
+                Site criado com React, TypeScript, PHP e MySQL
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -411,7 +410,7 @@ export const Projects = () => {
             </article>
           </li>
 
-          {/* Jogo de cartas do Bootcap  Full-Stack Java na DIO */}
+          {/* Jogo de cartas */}
           <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
             <article
               className="jd_sections_titles_links jd_title_right"
@@ -419,7 +418,7 @@ export const Projects = () => {
             >
               <h2 className="jd_item_title">Jogo de Cartas</h2>
               <p className="jd_item_subtitle">
-                Um dos desafios do Bootcamp na DIO
+                Jogo feito com HTML, CSS e JavaScript
               </p>
 
               <ul className="jd_sections_projetc_redirects">
@@ -478,7 +477,7 @@ export const Projects = () => {
           <li className="jd_sections_itens jd_section_lista_de_tarefas">
             <article className="jd_sections_titles_links" data-aos="fade-right">
               <h2 className="jd_item_title">Lista de Tarefas</h2>
-              <p className="jd_item_subtitle">Facilitando o seu dia-a-dia</p>
+              <p className="jd_item_subtitle">Sistema criado com React, Redux e TypeScript</p>
 
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">
@@ -530,7 +529,7 @@ export const Projects = () => {
               data-aos="fade-left"
             >
               <h2 className="jd_item_title">To-Do List</h2>
-              <p className="jd_item_subtitle">Sempre te ajudando a lembrar</p>
+              <p className="jd_item_subtitle">Sistema criado com HTML, CSS e JavaScript</p>
 
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">
@@ -579,7 +578,7 @@ export const Projects = () => {
           <li className="jd_sections_itens ">
             <article className="jd_sections_titles_links" data-aos="fade-right">
               <h2 className="jd_item_title">Sabor do Amor</h2>
-              <p className="jd_item_subtitle">O restaurante dos sonhos</p>
+              <p className="jd_item_subtitle">Site criado com HTML, CSS e JQuery</p>
 
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">
@@ -640,7 +639,7 @@ export const Projects = () => {
               data-aos="fade-left"
             >
               <h2 className="jd_item_title">JB - Car</h2>
-              <p className="jd_item_subtitle">A melhor escolha está aqui</p>
+              <p className="jd_item_subtitle">Site criado com HTML, CSS e JavaScript</p>
 
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">

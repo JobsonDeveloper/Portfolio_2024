@@ -58,7 +58,7 @@ export const Projects = () => {
               <ul className="jd_sections_projetc_redirects">
                 <li className="jd_projetc_redirect_item">
                   <a
-                    href="https://www.linkedin.com/posts/jobson-de-oliveira_finalizando-mais-um-desafio-%F0%9D%97%98%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%B6%F0%9D%97%B9-%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%83%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2-activity-7385818489653035008-jbtg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                    href="https://www.linkedin.com/posts/jobson-de-oliveira_finalizando-mais-um-desafio-%F0%9D%97%98%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%B6%F0%9D%97%B9-%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%83%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2-activity-7386054913228705792-dJWb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
                     className="jd_sections_projetc_links"
                     target="_blank"
                   >

@@ -14,11 +14,11 @@ import imageCloneDisneyPlus from "../../assets/projects/cloneDisneyPlus.webp";
 import imageDisneyPlusVingadores from "../../assets/projects/vingadoresDisneyPlus.webp";
 import imageListaDeTarefas from "../../assets/projects/listaDeTarefas.webp";
 import imageToDoList from "../../assets/projects/toDoList.webp";
-import imageJbCar from "../../assets/projects/JBcar.webp";
 import imageEPLAY from "../../assets/projects/eplay.png";
 import imageEFood from "../../assets/projects/efood.png";
 import imageLoggable from "../../assets/projects/Loggable.png";
 import imageClienteProdutoSpringBoot from "../../assets/projects/Spring-Boot-Client-Product-API.png";
+import imageEmailService from "../../assets/projects/E-mail-Service.png";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -44,9 +44,54 @@ export const Projects = () => {
         <h2 className="jd_page_name">Projetos</h2>
 
         <ul className="jd_sections">
+          {/* Email-Service */}
+          <li className="jd_sections_itens">
+            <article
+              className="jd_sections_titles_links"
+              data-aos="fade-right"
+            >
+              <h2 className="jd_item_title">Email-Service</h2>
+              <p className="jd_item_subtitle">
+                Envio de emails via AWS SES
+              </p>
+
+              <ul className="jd_sections_projetc_redirects">
+                <li className="jd_projetc_redirect_item">
+                  <a
+                    href="https://www.linkedin.com/posts/jobson-de-oliveira_finalizando-mais-um-desafio-%F0%9D%97%98%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%B6%F0%9D%97%B9-%F0%9D%97%A6%F0%9D%97%B2%F0%9D%97%BF%F0%9D%98%83%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2-activity-7385818489653035008-jbtg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4oovgBFy-L9G25WIsdt3jsyYuhcglLXI8"
+                    className="jd_sections_projetc_links"
+                    target="_blank"
+                  >
+                    <LinkedInIcon className="jd_project_icon" />
+                  </a>
+                </li>
+                <li className="jd_projetc_redirect_item">
+                  <a
+                    href="https://github.com/JobsonDeveloper/Email_Service"
+                    className="jd_sections_projetc_links"
+                    target="_blank"
+                  >
+                    <GitHubIcon className="jd_project_icon" />
+                  </a>
+                </li>
+              </ul>
+            </article>
+
+            <article
+              className="jd_sections_projetc_prevew"
+              data-aos="fade-right"
+            >
+              <img
+                src={imageEmailService}
+                alt="Foto do projeto Email-Service"
+                className="jd_sections_projetc_image"
+              />
+            </article>
+          </li>
+
           {/* Loggable */}
-          <li className="jd_sections_itens ">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">Loggable</h2>
               <p className="jd_item_subtitle">
                 Autenticação de usuários com JWT
@@ -76,7 +121,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageLoggable}
@@ -87,10 +132,10 @@ export const Projects = () => {
           </li>
 
           {/* JAVA - Client-Product */}
-          <li className="jd_sections_itens jd_section_jb_car jd_card_right">
+          <li className="jd_sections_itens">
             <article
               className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <h2 className="jd_item_title">APIs - Cliente-Produto</h2>
               <p className="jd_item_subtitle">
@@ -121,7 +166,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <img
                 src={imageClienteProdutoSpringBoot}
@@ -132,8 +177,8 @@ export const Projects = () => {
           </li>
 
           {/* EPLAY */}
-          <li className="jd_sections_itens ">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">EPLAY</h2>
               <p className="jd_item_subtitle">
                 Utilização do React com Redux e consumo de API
@@ -172,7 +217,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageEPLAY}
@@ -183,10 +228,10 @@ export const Projects = () => {
           </li>
 
           {/* eFood */}
-          <li className="jd_sections_itens jd_section_jb_car jd_card_right">
+          <li className="jd_sections_itens">
             <article
               className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <h2 className="jd_item_title">eFood</h2>
               <p className="jd_item_subtitle">
@@ -226,7 +271,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <img
                 src={imageEFood}
@@ -237,8 +282,8 @@ export const Projects = () => {
           </li>
 
           {/* Clone Disney+ */}
-          <li className="jd_sections_itens jd_section_clone_disney">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">Clone Disney+</h2>
               <p className="jd_item_subtitle">
                 Landing page feita com HTML, Sass e JavaScript
@@ -286,7 +331,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageCloneDisneyPlus}
@@ -297,10 +342,10 @@ export const Projects = () => {
           </li>
 
           {/* Jogo de cartas */}
-          <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
+          <li className="jd_sections_itens">
             <article
               className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <h2 className="jd_item_title">Página de filme da Disney+</h2>
               <p className="jd_item_subtitle">
@@ -349,7 +394,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <img
                 src={imageDisneyPlusVingadores}
@@ -360,8 +405,8 @@ export const Projects = () => {
           </li>
 
           {/* Skillhub */}
-          <li className="jd_sections_itens jd_section_skillhub">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">Skillhub</h2>
               <p className="jd_item_subtitle">
                 Site criado com React, TypeScript, PHP e MySQL
@@ -400,7 +445,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageSkillhub}
@@ -411,10 +456,10 @@ export const Projects = () => {
           </li>
 
           {/* Jogo de cartas */}
-          <li className="jd_sections_itens jd_section_jogo_cartas jd_card_right">
+          <li className="jd_sections_itens">
             <article
               className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <h2 className="jd_item_title">Jogo de Cartas</h2>
               <p className="jd_item_subtitle">
@@ -463,7 +508,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <img
                 src={imageCartasUchiha}
@@ -474,8 +519,8 @@ export const Projects = () => {
           </li>
 
           {/* Lista de Tarefas */}
-          <li className="jd_sections_itens jd_section_lista_de_tarefas">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">Lista de Tarefas</h2>
               <p className="jd_item_subtitle">Sistema criado com React, Redux e TypeScript</p>
 
@@ -512,7 +557,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageListaDeTarefas}
@@ -523,10 +568,10 @@ export const Projects = () => {
           </li>
 
           {/* To-Do List */}
-          <li className="jd_sections_itens jd_section_toDo_list jd_card_right">
+          <li className="jd_sections_itens">
             <article
-              className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
+              className="jd_sections_titles_links"
+              data-aos="fade-right"
             >
               <h2 className="jd_item_title">To-Do List</h2>
               <p className="jd_item_subtitle">Sistema criado com HTML, CSS e JavaScript</p>
@@ -564,7 +609,7 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
+              data-aos="fade-right"
             >
               <img
                 src={imageToDoList}
@@ -575,8 +620,8 @@ export const Projects = () => {
           </li>
 
           {/* Sabor do amor */}
-          <li className="jd_sections_itens ">
-            <article className="jd_sections_titles_links" data-aos="fade-right">
+          <li className="jd_sections_itens jd_card_right">
+            <article className="jd_sections_titles_links" data-aos="fade-left">
               <h2 className="jd_item_title">Sabor do Amor</h2>
               <p className="jd_item_subtitle">Site criado com HTML, CSS e JQuery</p>
 
@@ -622,54 +667,11 @@ export const Projects = () => {
 
             <article
               className="jd_sections_projetc_prevew"
-              data-aos="fade-right"
+              data-aos="fade-left"
             >
               <img
                 src={imageSaborDoAmor}
                 alt="Foto do projeto Sabor do Amor"
-                className="jd_sections_projetc_image"
-              />
-            </article>
-          </li>
-
-          {/* JB Car */}
-          <li className="jd_sections_itens jd_section_jb_car jd_card_right">
-            <article
-              className="jd_sections_titles_links jd_title_right"
-              data-aos="fade-left"
-            >
-              <h2 className="jd_item_title">JB - Car</h2>
-              <p className="jd_item_subtitle">Site criado com HTML, CSS e JavaScript</p>
-
-              <ul className="jd_sections_projetc_redirects">
-                <li className="jd_projetc_redirect_item">
-                  <a
-                    href="https://github.com/JobsonDeveloper/JB-CAR"
-                    className="jd_sections_projetc_links"
-                    target="_blank"
-                  >
-                    <GitHubIcon className="jd_project_icon" />
-                  </a>
-                </li>
-                <li className="jd_projetc_redirect_item">
-                  <a
-                    href="https://jb-car.vercel.app/"
-                    className="jd_sections_projetc_links"
-                    target="_blank"
-                  >
-                    <LanguageIcon className="jd_project_icon" />
-                  </a>
-                </li>
-              </ul>
-            </article>
-
-            <article
-              className="jd_sections_projetc_prevew"
-              data-aos="fade-left"
-            >
-              <img
-                src={imageJbCar}
-                alt="Foto do projeto JB Car"
                 className="jd_sections_projetc_image"
               />
             </article>

@@ -35,7 +35,7 @@
             box-shadow: 0px 0px 9px #9a9a9aa3;
 
             &::after {
-                background-color: var(--jd_tertiary_color);
+                background-color: transparent;
                 animation: animationCertificate 3s linear infinite;
             }
         }

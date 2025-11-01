@@ -6,7 +6,7 @@ export const CertificatesCard = (props) => {
   return (
     <Zoom in={props.showCertificate}>
       <a
-        href="https://drive.google.com/drive/folders/16KZQidhcQKFhNzc8YW4JycDC4RhdeUcc?usp=sharing"
+        href={props.driveLink}
         className="jd_certificates_link"
         target="_blank"
       >

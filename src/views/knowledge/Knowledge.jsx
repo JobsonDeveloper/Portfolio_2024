@@ -14,6 +14,7 @@ import { CertificatesCard } from "../../components/certificatesCard/Certificates
 
 // Certificates
 import AWSCloudPratitioner from "../../assets/certificates/AWS-Cloud-Pratitioner.png";
+import UBAnaliseEDesenvolvimentoDeSistemas from "../../assets/certificates/UNIBRA-Analise-e-Desenvolvimento-de-Sistemas.png";
 import EBACFullStackJava from "../../assets/certificates/EBAC-Full-Stack-Java.png";
 import EBACMeetSpringBoot from "../../assets/certificates/EBAC-Meet-Spring-Boot.png";
 import DioTQIFullStack from "../../assets/certificates/DIO-TQI-FullStack-Java.png";
@@ -149,68 +150,75 @@ export const Knowledge = () => {
               )}
               {certificatePage === 2 && (
                 <CertificatesCard
+                  certificateUrl={UBAnaliseEDesenvolvimentoDeSistemas}
+                  showCertificate={showCertificate}
+                  driveLink="https://drive.google.com/file/d/1t7zU6dekoIJ3LQtqDYXQvWiilg4lbRYj/view?usp=drive_link"
+                />
+              )}
+              {certificatePage === 3 && (
+                <CertificatesCard
                   certificateUrl={EBACFullStackJava}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/1oIQGXFw42lA0JbqkKXXQSZkaxgDRBR7-/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 3 && (
+              {certificatePage === 4 && (
                 <CertificatesCard
                   certificateUrl={EBACMeetSpringBoot}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/1rzrXWCqyGtBYchCrAdu5H5xzhkmyJU8i/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 4 && (
+              {certificatePage === 5 && (
                 <CertificatesCard
                   certificateUrl={DioTQIFullStack}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/1OGDxcDNz0NxY6ycPymfBNw-4YFWs7LYv/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 5 && (
+              {certificatePage === 6 && (
                 <CertificatesCard
                   certificateUrl={DioBootcampJava}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/18qCR5NdFNtnVMttO108vQCFAsDpipnFk/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 6 && (
+              {certificatePage === 7 && (
                 <CertificatesCard
                   certificateUrl={DioBootcampSpringFramework}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/1Jp_1zhLbgKXz6D0g0VCJu8sLLlXZcGMv/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 7 && (
+              {certificatePage === 8 && (
                 <CertificatesCard
                   certificateUrl={DioBootcampReactJs}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/18v4zgI9sbb_j38F2TutCrtOBl2Q0fGIx/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 8 && (
+              {certificatePage === 9 && (
                 <CertificatesCard
                   certificateUrl={DioBootcampSQL}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/18l-NUnu0k9zh5nyXvw3cVq0mGTEkUkyu/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 9 && (
+              {certificatePage === 10 && (
                 <CertificatesCard
                   certificateUrl={UBUnibraLogicFromProgramming}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/1UUOjbob73OVPCVHRG-GBS8RgfEfbDZsT/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 10 && (
+              {certificatePage === 11 && (
                 <CertificatesCard
                   certificateUrl={UBProjectOrientedObject}
                   showCertificate={showCertificate}
                   driveLink="https://drive.google.com/file/d/14vlggDA_Cz3l79XLNiZvAnyyGmieTDFK/view?usp=drive_link"
                 />
               )}
-              {certificatePage === 11 && (
+              {certificatePage === 12 && (
                 <CertificatesCard
                   certificateUrl={UBManagementProject}
                   showCertificate={showCertificate}
@@ -220,7 +228,7 @@ export const Knowledge = () => {
 
               <article className="jd_certificate_pagination">
                 <Pagination
-                  count={11}
+                  count={12}
                   page={certificatePage}
                   onChange={changeCertificatePage}
                   hidePrevButton
